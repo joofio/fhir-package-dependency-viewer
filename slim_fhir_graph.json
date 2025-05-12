@@ -1,0 +1,4961 @@
+{
+  "created": "2025-05-12T16:00:09.250172",
+  "packages": [
+    {
+      "id": "au.digitalhealth.r4#current",
+      "name": "au.digitalhealth.r4",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.au.core#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.patient-corrections#current",
+      "name": "hl7.fhir.uv.patient-corrections",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.mhd#current",
+      "name": "ihe.iti.mhd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.iti.balp#1.1.x",
+        "ihe.formatcode.fhir#1.1.x"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-core#current",
+      "name": "ch.fhir.ig.ch-core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-epr-term#2.0.9",
+        "hl7.terminology#5.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.pacio-pfe#current",
+      "name": "hl7.fhir.us.pacio-pfe",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.emedicinal-product-info#current",
+      "name": "hl7.fhir.uv.emedicinal-product-info",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "kl.fhir.dk.children#current",
+      "name": "kl.fhir.dk.children",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#2.1.0",
+        "kl.dk.fhir.term#1.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.qicore#current",
+      "name": "hl7.fhir.us.qicore",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#6.1.0",
+        "fhir.dicom#2023.3.20230704"
+      ]
+    },
+    {
+      "id": "hl7.org.nz.fhir.ig.hpi#current",
+      "name": "hl7.org.nz.fhir.ig.hpi",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.org.nz.fhir.ig.base#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.v2mappings#current",
+      "name": "hl7.fhir.uv.v2mappings",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-emed#current",
+      "name": "ch.fhir.ig.ch-emed",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-core#current",
+        "ch.fhir.ig.ch-epr-term#2.0.9",
+        "hl7.terminology#5.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.fi.base#current",
+      "name": "hl7.fhir.fi.base",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ipa#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.cpg#current",
+      "name": "hl7.fhir.uv.cpg",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "cinc.fhir.ig#current",
+      "name": "cinc.fhir.ig",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "fhir.org.nz.ig.base#2.0.0",
+        "hl7.fhir.uv.sdc#3.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.dicom-sr#current",
+      "name": "hl7.fhir.uv.dicom-sr",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0",
+        "fhir.dicom#2023.1.20230123"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.ph-library#current",
+      "name": "hl7.fhir.us.ph-library",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "hl7.fhir.us.core#4.0.0",
+        "us.cdc.phinvads#0.7.0",
+        "us.nlm.vsac#0.4.0"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.terminology#current",
+      "name": "medcom.fhir.dk.terminology",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.shc-vaccination#current",
+      "name": "hl7.fhir.uv.shc-vaccination",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "cards.smarthealth.terminology#current"
+      ]
+    },
+    {
+      "id": "example.fhir.uv.myig#current",
+      "name": "example.fhir.uv.myig",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-lab-order#current",
+      "name": "ch.fhir.ig.ch-lab-order",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-epr-term#2.0.9",
+        "hl7.terminology#5.1.0",
+        "ch.fhir.ig.ch-orf#2.0.0-ballot",
+        "ch.fhir.ig.ch-core#4.0.0-ballot",
+        "hl7.fhir.uv.order-catalog#0.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.public-health#current",
+      "name": "hl7.fhir.be.public-health",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#2.0.1",
+        "hl7.fhir.be.core-clinical#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.fi.smart#current",
+      "name": "hl7.fhir.fi.smart",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ipa#1.0.0",
+        "hl7.fhir.uv.smart-app-launch#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.vrsandbox#current",
+      "name": "hl7.fhir.us.vrsandbox",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "us.nlm.vsac#0.9.0",
+        "us.cdc.phinvads#0.12.0",
+        "hl7.fhir.us.odh#1.2.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.sips#current",
+      "name": "ihe.iti.sips",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.1.x",
+        "ihe.iti.mhd#4.2.x"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.codex-radiation-therapy#current",
+      "name": "hl7.fhir.us.codex-radiation-therapy",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#4.0.0",
+        "hl7.fhir.us.mcode#2.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.mycarenet#current",
+      "name": "hl7.fhir.be.mycarenet",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#current",
+        "hl7.fhir.be.core-clinical#current",
+        "hl7.fhir.be.nihdi-terminology#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ichom-breast-cancer#current",
+      "name": "hl7.fhir.uv.ichom-breast-cancer",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "hl7.fhir.uv.extensions#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.central-cancer-registry-reporting#current",
+      "name": "hl7.fhir.us.central-cancer-registry-reporting",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.medmorph#current",
+        "hl7.fhir.uv.subscriptions-backport#0.1.0",
+        "hl7.fhir.us.mcode#1.16.0",
+        "hl7.fhir.us.odh#1.1.0",
+        "hl7.fhir.uv.smart-app-launch#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.specialty-rx#current",
+      "name": "hl7.fhir.us.specialty-rx",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.vulcan-schedule#current",
+      "name": "hl7.fhir.uv.vulcan-schedule",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.homecareobservation#current",
+      "name": "medcom.fhir.dk.homecareobservation",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#2.2.0",
+        "medcom.fhir.dk.terminology#current",
+        "medcom.fhir.dk.core#current",
+        "medcom.fhir.dk.messaging#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.vhdir#current",
+      "name": "hl7.fhir.uv.vhdir",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.bulkdata#2.0.0",
+        "hl7.fhir.uv.smart-app-launch#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ips#current",
+      "name": "hl7.fhir.uv.ips",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "fhir.dicom#2022.4.20221006"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.dx-pq#current",
+      "name": "hl7.fhir.uv.dx-pq",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.uv.extensions.r5#1.0.0",
+        "hl7.terminology.r5#5.0.0"
+      ]
+    },
+    {
+      "id": "nz.central.ihub.ig#current",
+      "name": "nz.central.ihub.ig",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "fhir.org.nz.ig.base#2.0.0"
+      ]
+    },
+    {
+      "id": "csiro.fhir.au.smartforms#current",
+      "name": "csiro.fhir.au.smartforms",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.au.core#current",
+        "hl7.fhir.uv.sdc#current"
+      ]
+    },
+    {
+      "id": "ihe.iti.dsubm#current",
+      "name": "ihe.iti.dsubm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.subscriptions-backport#1.1.0",
+        "hl7.terminology#5.2.0",
+        "ihe.iti.mhd#4.2.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-drug-formulary#current",
+      "name": "hl7.fhir.us.davinci-drug-formulary",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "hl7.fhir.us.davinci-pdex-plan-net#1.0.0",
+        "hl7.fhir.us.davinci-hrex#1.0.0"
+      ]
+    },
+    {
+      "id": "fhir.cdc.opioid-cds-r4#current",
+      "name": "fhir.cdc.opioid-cds-r4",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.cpg#1.0.0",
+        "hl7.fhir.us.cqfmeasures#3.0.0",
+        "fhir.cdc.opioid-mme-r4#3.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.mcode#current",
+      "name": "hl7.fhir.us.mcode",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.uv.genomics-reporting#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ipa#current",
+      "name": "hl7.fhir.uv.ipa",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.smart-app-launch#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.pacio-adi#current",
+      "name": "hl7.fhir.us.pacio-adi",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#4.0.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.pdqm#current",
+      "name": "ihe.iti.pdqm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "ihe.iti.balp#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.sql-on-fhir#current",
+      "name": "hl7.fhir.uv.sql-on-fhir",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.mcc#current",
+      "name": "hl7.fhir.us.mcc",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#6.1.0",
+        "us.nlm.vsac#0.11.0",
+        "hl7.fhir.uv.sdc#3.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.eattestation#current",
+      "name": "hl7.fhir.be.eattestation",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#current",
+        "hl7.fhir.be.core-clinical#current",
+        "hl7.fhir.be.nihdi-terminology#current",
+        "hl7.fhir.be.mycarenet#current"
+      ]
+    },
+    {
+      "id": "ihe.iti.balp#current",
+      "name": "ihe.iti.balp",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-atc#current",
+      "name": "ch.fhir.ig.ch-atc",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-epr-term#2.0.x",
+        "ihe.iti.balp#1.1.1"
+      ]
+    },
+    {
+      "id": "vital-records-fhir-messaging#current",
+      "name": "vital-records-fhir-messaging",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.vrdr#current"
+      ]
+    },
+    {
+      "id": "johnmoehrke.testdicom.example#current",
+      "name": "johnmoehrke.testdicom.example",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "fhir.dicom#2023.3.20230704"
+      ]
+    },
+    {
+      "id": "fhir.minsal.ListaDeEspera#current",
+      "name": "fhir.minsal.ListaDeEspera",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.cl.clcore#1.8.4"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-vacd#current",
+      "name": "ch.fhir.ig.ch-vacd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-epr-term#2.0.9",
+        "hl7.terminology#5.1.0",
+        "ch.fhir.ig.ch-core#current",
+        "hl7.fhir.uv.ips#1.0.0",
+        "ch.fhir.ig.ch-emed#current",
+        "ch.fhir.ig.ch-allergyintolerance#current"
+      ]
+    },
+    {
+      "id": "tewhatuora.fhir.ig.fhir-nzips#current",
+      "name": "tewhatuora.fhir.ig.fhir-nzips",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current",
+        "fhir.org.nz.ig.base#current"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-epr-term#current",
+      "name": "ch.fhir.ig.ch-epr-term",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.formatcode.fhir#1.1.0",
+        "hl7.terminology#5.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.lab#current",
+      "name": "hl7.fhir.be.lab",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#2.0.0",
+        "hl7.fhir.be.core-clinical#1.0.0"
+      ]
+    },
+    {
+      "id": "il.moh.mri.r4#current",
+      "name": "il.moh.mri.r4",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "il.core.fhir.r4#0.10.1-snapshots"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.adverseeventclinicalcare#current",
+      "name": "hl7.fhir.uv.adverseeventclinicalcare",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.cqfmeasures#current",
+      "name": "hl7.fhir.us.cqfmeasures",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "fhir.cqf.common#4.0.1",
+        "hl7.fhir.us.qicore#5.0.0",
+        "hl7.terminology#5.2.0"
+      ]
+    },
+    {
+      "id": "ihe.pcc.qedm#current",
+      "name": "ihe.pcc.qedm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "ihe.iti.mhd#current",
+        "ihe.iti.pdqm#current",
+        "ihe.iti.pixm#current",
+        "ihe.iti.mcsd#current",
+        "ihe.formatcode.fhir#current",
+        "ihe.iti.balp#current",
+        "ihe.iti.svcm#current",
+        "ihe.iti.mxde#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.vaccination#current",
+      "name": "hl7.fhir.be.vaccination",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#2.0.1",
+        "hl7.fhir.be.medication#1.0.0",
+        "hl7.fhir.be.core-clinical#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.nl.zorgviewer#current",
+      "name": "hl7.fhir.nl.zorgviewer",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2",
+        "hl7.terminology.r3#4.0.0",
+        "nictiz.fhir.nl.stu3.zib2017#2.2.14"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-allergyintolerance#current",
+      "name": "ch.fhir.ig.ch-allergyintolerance",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-core#current",
+        "hl7.terminology#5.1.0",
+        "hl7.fhir.uv.ips#1.0.0"
+      ]
+    },
+    {
+      "id": "example.fhir.uv.mycontentig#current",
+      "name": "example.fhir.uv.mycontentig",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.cpg#1.0.0",
+        "fhir.cqf.common#4.0.1",
+        "hl7.fhir.us.cqfmeasures#3.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.cardx-htn#current",
+      "name": "hl7.fhir.us.cardx-htn",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "fhir.who.smart-base#current",
+      "name": "fhir.who.smart-base",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhirpath#current",
+      "name": "hl7.fhirpath",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "ihe.pcc.aps#current",
+      "name": "ihe.pcc.aps",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.0.x"
+      ]
+    },
+    {
+      "id": "hl7.eetest.fhir.foodallergy#current",
+      "name": "hl7.eetest.fhir.foodallergy",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "fhir.asu.consent-validation#current",
+      "name": "fhir.asu.consent-validation",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.insurance-card#current",
+      "name": "hl7.fhir.us.insurance-card",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#4.0.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.mxde#current",
+      "name": "ihe.iti.mxde",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.iti.mhd#4.2.1",
+        "ihe.iti.pdqm#2.4.x",
+        "ihe.iti.pixm#3.0.3",
+        "ihe.iti.balp#1.1.x"
+      ]
+    },
+    {
+      "id": "kl.dk.fhir.gateway#current",
+      "name": "kl.dk.fhir.gateway",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#1.1.0",
+        "kl.dk.fhir.term#1.0.0"
+      ]
+    },
+    {
+      "id": "my-ig#current",
+      "name": "my-ig",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.nihdi-terminology#current",
+      "name": "hl7.fhir.be.nihdi-terminology",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.vulcan-soa#current",
+      "name": "hl7.fhir.uv.vulcan-soa",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.cmi#current",
+      "name": "hl7.fhir.uv.cmi",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "fhir.cqf.common#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.fhircast#current",
+      "name": "hl7.fhir.uv.fhircast",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-etoc#current",
+      "name": "ch.fhir.ig.ch-etoc",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-epr-term#2.0.9",
+        "hl7.terminology#5.1.0",
+        "ch.fhir.ig.ch-orf#2.0.0-ballot",
+        "ch.fhir.ig.ch-core#4.0.0-ballot",
+        "ch.fhir.ig.ch-emed#4.0.0-ballot",
+        "ch.fhir.ig.ch-vacd#4.0.0-ballot",
+        "ch.fhir.ig.ch-allergyintolerance#2.0.0-ballot",
+        "hl7.fhir.uv.ips#1.0.0"
+      ]
+    },
+    {
+      "id": "ihe.domain.profile#current",
+      "name": "ihe.domain.profile",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ihe.rad.ira#current",
+      "name": "ihe.rad.ira",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0"
+      ]
+    },
+    {
+      "id": "ch.cara.fhir.epr.emed#current",
+      "name": "ch.cara.fhir.epr.emed",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-core#current",
+        "ch.fhir.ig.ch-emed#current"
+      ]
+    },
+    {
+      "id": "ihe.iti.pmir#current",
+      "name": "ihe.iti.pmir",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "ihe.iti.balp#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.capabilities#current",
+      "name": "hl7.fhir.be.capabilities",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#2.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ehrs-rle#current",
+      "name": "hl7.fhir.uv.ehrs-rle",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "ChgIG#current",
+      "name": "ChgIG",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "kl.dk.fhir.term#current",
+      "name": "kl.dk.fhir.term",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.mdi#current",
+      "name": "hl7.fhir.us.mdi",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "us.cdc.phinvads#0.12.0"
+      ]
+    },
+    {
+      "id": "sequoiaproject.fhir.us.pushnotifications#current",
+      "name": "sequoiaproject.fhir.us.pushnotifications",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#4.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.pocd#current",
+      "name": "hl7.fhir.uv.pocd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "smart-ig-empty#current",
+      "name": "smart-ig-empty",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.crmi#current",
+      "name": "hl7.fhir.uv.crmi",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "fhir.cqf.common#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "kl.dk.fhir.ffinst#current",
+      "name": "kl.dk.fhir.ffinst",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#1.1.0",
+        "kl.dk.fhir.core#1.2.0",
+        "kl.dk.fhir.term#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.ohsuhypertensionig#current",
+      "name": "hl7.fhir.us.ohsuhypertensionig",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "ihe.pharm.supply#current",
+      "name": "ihe.pharm.supply",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.smart-web-messaging#current",
+      "name": "hl7.fhir.uv.smart-web-messaging",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.cl.recetachile#current",
+      "name": "hl7.fhir.cl.recetachile",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.cl.corecl#1.7.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.medmorph#current",
+      "name": "hl7.fhir.us.medmorph",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.bulkdata#1.0.1",
+        "hl7.fhir.uv.smart-app-launch#2.0.0",
+        "hl7.fhir.uv.subscriptions-backport.r4#1.1.0"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.hospitalnotification#current",
+      "name": "medcom.fhir.dk.hospitalnotification",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#2.0.0",
+        "medcom.fhir.dk.core#current",
+        "medcom.fhir.dk.messaging#current",
+        "medcom.fhir.dk.terminology#current"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.unicom#current",
+      "name": "hl7.eu.fhir.unicom",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.mi.phr#current",
+      "name": "hl7.fhir.mi.phr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.ca.baseline#current",
+      "name": "hl7.fhir.ca.baseline",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.bulkdata#current",
+      "name": "hl7.fhir.uv.bulkdata",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.health-care-surveys-reporting#current",
+      "name": "hl7.fhir.us.health-care-surveys-reporting",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.medmorph#1.0.0",
+        "hl7.fhir.uv.smart-app-launch#2.0.0",
+        "hl7.fhir.uv.subscriptions-backport.r4#1.1.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.pcf#current",
+      "name": "ihe.iti.pcf",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "us.nlm.vsac#0.9.0",
+        "ihe.iti.balp#1.1.x"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.cancer-reporting#current",
+      "name": "hl7.fhir.us.cancer-reporting",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.medmorph#1.0.0"
+      ]
+    },
+    {
+      "id": "cqf.fhir.cds4cpm#current",
+      "name": "cqf.fhir.cds4cpm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.sdc#2.7.0",
+        "hl7.fhir.us.core#3.1.0",
+        "hl7.fhir.uv.cpg#dev",
+        "fhir.cdc.opioid-cds-r4#dev"
+      ]
+    },
+    {
+      "id": "ihe.iti.npfs#current",
+      "name": "ihe.iti.npfs",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.formatcode.fhir#1.1.x",
+        "ihe.iti.balp#1.1.x"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.core#current",
+      "name": "medcom.fhir.dk.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#2.0.0",
+        "medcom.fhir.dk.terminology#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions#current",
+      "name": "hl7.fhir.uv.extensions",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.pedcan#current",
+      "name": "hl7.fhir.us.pedcan",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.mcode#3.0.0-ballot",
+        "hl7.fhir.uv.genomics-reporting#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-alerts#current",
+      "name": "hl7.fhir.us.davinci-alerts",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.davinci-hrex#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.ndh#current",
+      "name": "hl7.fhir.us.ndh",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.udap-security#1.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.subscriptions-backport#0.1.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-orf#current",
+      "name": "ch.fhir.ig.ch-orf",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.terminology#5.1.0",
+        "ch.fhir.ig.ch-core#4.0.0-ballot",
+        "hl7.fhir.uv.sdc#3.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.breast-radiology#current",
+      "name": "hl7.fhir.us.breast-radiology",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#5.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.fhir-for-fair#current",
+      "name": "hl7.fhir.uv.fhir-for-fair",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.fhir.uv.tools#current",
+        "hl7.terminology.r4#4.0.0"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.gh#current",
+      "name": "hl7.eu.fhir.gh",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.emedicinal-product-info#current",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.metadata.qrd#current",
+      "name": "medcom.fhir.dk.metadata.qrd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "medcom.fhir.dk.metadata.core#dev",
+        "medcom.fhir.dk.xds.metadata#dev"
+      ]
+    },
+    {
+      "id": "ihe.formatcode.fhir#current",
+      "name": "ihe.formatcode.fhir",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "kl.dk.fhir.core#current",
+      "name": "kl.dk.fhir.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#1.1.0",
+        "kl.dk.fhir.term#1.0.0"
+      ]
+    },
+    {
+      "id": "fhir.qpath4ms#current",
+      "name": "fhir.qpath4ms",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "de.basisprofil.r4#1.3.2"
+      ]
+    },
+    {
+      "id": "who.fhir.immunization#current",
+      "name": "who.fhir.immunization",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.icsr-ae-reporting#current",
+      "name": "hl7.fhir.us.icsr-ae-reporting",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#4.0.0",
+        "hl7.fhir.us.medmorph#0.1.0",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.military-service#current",
+      "name": "hl7.fhir.us.military-service",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.odh#1.2.0",
+        "hl7.terminology#5.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.dk.hackathon.2022#current",
+      "name": "hl7.fhir.dk.hackathon.2022",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#1.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.sdoh-clinicalcare#current",
+      "name": "hl7.fhir.us.sdoh-clinicalcare",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "hl7.fhir.uv.subscriptions-backport#0.1.0",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.etariff#current",
+      "name": "hl7.fhir.be.etariff",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#current",
+        "hl7.fhir.be.core-clinical#current",
+        "hl7.fhir.be.nihdi-terminology#current",
+        "hl7.fhir.be.mycarenet#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-hrex#current",
+      "name": "hl7.fhir.us.davinci-hrex",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.udap-security#0.1.0",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "cara#current",
+      "name": "cara",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.physical-activity#current",
+      "name": "hl7.fhir.us.physical-activity",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.sdoh-clinicalcare#2.1.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "hl7.fhir.uv.subscriptions-backport.r4#1.1.0",
+        "hl7.fhir.uv.extensions#1.0.0"
+      ]
+    },
+    {
+      "id": "ndhm.in#current",
+      "name": "ndhm.in",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.metadata.apd#current",
+      "name": "medcom.fhir.dk.metadata.apd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "medcom.fhir.dk.metadata.core#dev",
+        "medcom.fhir.dk.xds.metadata#dev"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.dme-orders#current",
+      "name": "hl7.fhir.us.dme-orders",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "dhis2-ig-empty#current",
+      "name": "dhis2-ig-empty",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "who.fhir.smart-base#current",
+      "name": "who.fhir.smart-base",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ichom.breastcancer#current",
+      "name": "hl7.fhir.uv.ichom.breastcancer",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "hl7.fhir.uv.extensions#1.0.0"
+      ]
+    },
+    {
+      "id": "uv.esavi#current",
+      "name": "uv.esavi",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-epr-mhealth#current",
+      "name": "ch.fhir.ig.ch-epr-mhealth",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-core#current",
+        "ihe.iti.pixm#3.0.2",
+        "ihe.iti.pdqm#2.4.0",
+        "ihe.iti.mhd#4.2.0",
+        "ihe.iti.mcsd#3.8.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.genomics-reporting#current",
+      "name": "hl7.fhir.uv.genomics-reporting",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "who.fhir.anc-cds#current",
+      "name": "who.fhir.anc-cds",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.cpg#1.0.0",
+        "hl7.fhir.us.cqfmeasures#current"
+      ]
+    },
+    {
+      "id": "ihe.pcc.ript#current",
+      "name": "ihe.pcc.ript",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.ips#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.vulcan-eproduct-info#current",
+      "name": "hl7.fhir.uv.vulcan-eproduct-info",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0"
+      ]
+    },
+    {
+      "id": "ch.chmed.emediplan#current",
+      "name": "ch.chmed.emediplan",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-emed#4.0.0-ballot",
+        "ch.fhir.ig.ch-core#4.0.0-ballot"
+      ]
+    },
+    {
+      "id": "ihe.pcc.pcs#current",
+      "name": "ihe.pcc.pcs",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.ips#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.ctcae#current",
+      "name": "hl7.fhir.us.ctcae",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.0",
+        "hl7.fhir.us.mcode#1.16.0"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.gk#current",
+      "name": "hl7.eu.fhir.gk",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current"
+      ]
+    },
+    {
+      "id": "ihe.pharm.mpd#current",
+      "name": "ihe.pharm.mpd",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.radiation-dose-summary#current",
+      "name": "hl7.fhir.uv.radiation-dose-summary",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.0.0",
+        "fhir.dicom#2021.4.20210910"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.spl#current",
+      "name": "hl7.fhir.us.spl",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.eu.base#current",
+      "name": "hl7.fhir.eu.base",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-lab-report#current",
+      "name": "ch.fhir.ig.ch-lab-report",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-core#current",
+        "hl7.fhir.uv.ips#current",
+        "hl7.fhir.eu.laboratory#current",
+        "ch.fhir.ig.ch-lab-order#2.0.0-ballot"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.carecommunication#current",
+      "name": "medcom.fhir.dk.carecommunication",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#2.0.0",
+        "medcom.fhir.dk.core#current",
+        "medcom.fhir.dk.messaging#current",
+        "medcom.fhir.dk.terminology#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.cdmh#current",
+      "name": "hl7.fhir.us.cdmh",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#4.0.0"
+      ]
+    },
+    {
+      "id": "kl.dk.fhir.ffbreporting#current",
+      "name": "kl.dk.fhir.ffbreporting",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#1.1.0",
+        "kl.dk.fhir.core#1.2.0",
+        "kl.dk.fhir.term#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.subscriptions-backport#current",
+      "name": "hl7.fhir.uv.subscriptions-backport",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.eltss#current",
+      "name": "hl7.fhir.us.eltss",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "johnmoehrke.basicaudit.no#current",
+      "name": "johnmoehrke.basicaudit.no",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.iti.balp#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ae-research-backport-ig#current",
+      "name": "hl7.fhir.uv.ae-research-backport-ig",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.tools#current",
+      "name": "hl7.fhir.uv.tools",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.cda.us.ccda#current",
+      "name": "hl7.cda.us.ccda",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0",
+        "hl7.cda.uv.core#current",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.eu.laboratory#current",
+      "name": "hl7.fhir.eu.laboratory",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.saner#current",
+      "name": "hl7.fhir.uv.saner",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "johnmoehrke.testmultirelease.example#current",
+      "name": "johnmoehrke.testmultirelease.example",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.iti.mhd#4.2.x"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pdex#current",
+      "name": "hl7.fhir.us.davinci-pdex",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.davinci-hrex#1.0.0",
+        "hl7.fhir.us.davinci-pas#1.2.0-ballot",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.cda.us.ccdar2dot2#current",
+      "name": "hl7.cda.us.ccdar2dot2",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0",
+        "hl7.cda.uv.core#current",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.pddi#current",
+      "name": "hl7.fhir.uv.pddi",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.eyecare#current",
+      "name": "hl7.fhir.uv.eyecare",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ebm#current",
+      "name": "hl7.fhir.uv.ebm",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.dental-data-exchange#current",
+      "name": "hl7.fhir.us.dental-data-exchange",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.ccda#1.1.0",
+        "hl7.fhir.us.davinci-hrex#0.1.0",
+        "hl7.fhir.us.odh#1.0.0",
+        "hl7.fhir.us.core#4.0.0",
+        "hl7.terminology#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.cimilabs#current",
+      "name": "hl7.fhir.us.cimilabs",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "ihe.iti.scheduling#current",
+      "name": "ihe.iti.scheduling",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ipa#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.pq-cmc#current",
+      "name": "hl7.fhir.us.pq-cmc",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "fhir.dicom#2023.1.20230123"
+      ]
+    },
+    {
+      "id": "ihe.iti.mhds#current",
+      "name": "ihe.iti.mhds",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.formatcode.fhir#1.1.x",
+        "ihe.iti.balp#1.1.x",
+        "ihe.iti.mhd#4.2.1",
+        "ihe.iti.svcm#1.5.1",
+        "ihe.iti.mcsd#3.8.x",
+        "ihe.iti.pdqm#2.4.x",
+        "ihe.iti.pixm#3.0.3",
+        "ihe.iti.pmir#1.5.x"
+      ]
+    },
+    {
+      "id": "openmrs.fhir.core#current",
+      "name": "openmrs.fhir.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "mycompany.fhir.foodallergy#current",
+      "name": "mycompany.fhir.foodallergy",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.rtls#current",
+      "name": "hl7.fhir.uv.rtls",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.vrdr#current",
+      "name": "hl7.fhir.us.vrdr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.odh#1.2.0",
+        "us.cdc.phinvads#0.12.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.exchange-routing#current",
+      "name": "hl7.fhir.us.exchange-routing",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.referral#current",
+      "name": "hl7.fhir.be.referral",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#current",
+        "hl7.fhir.be.medication#1.0.0",
+        "hl7.fhir.be.core-clinical#current",
+        "hl7.fhir.be.allergy#1.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.nhsn-ade#current",
+      "name": "hl7.fhir.us.nhsn-ade",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#4.0.0",
+        "us.nlm.vsac#0.4.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ibcm#current",
+      "name": "hl7.fhir.uv.ibcm",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.vulcan-rwd#current",
+      "name": "hl7.fhir.uv.vulcan-rwd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.ipa#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pdex-plan-net#current",
+      "name": "hl7.fhir.us.davinci-pdex-plan-net",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.smart-app-launch#current",
+      "name": "hl7.fhir.uv.smart-app-launch",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.au.pd#current",
+      "name": "hl7.fhir.au.pd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.au.base#4.1.0-ballot"
+      ]
+    },
+    {
+      "id": "arkhn.fhir.uv.osiris#current",
+      "name": "arkhn.fhir.uv.osiris",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.genomics-reporting#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.it.cda2fhir#current",
+      "name": "hl7.fhir.it.cda2fhir",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.cda#dev"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pas#current",
+      "name": "hl7.fhir.us.davinci-pas",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.davinci-crd#current"
+      ]
+    },
+    {
+      "id": "cards.smarthealth.terminology#current",
+      "name": "cards.smarthealth.terminology",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.xpandh.hdr#current",
+      "name": "hl7.eu.fhir.xpandh.hdr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current",
+        "hl7.fhir.eu.laboratory#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.core#current",
+      "name": "hl7.fhir.us.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.bulkdata#2.0.0",
+        "hl7.fhir.uv.smart-app-launch#2.1.0",
+        "us.nlm.vsac#0.11.0",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "us.cdc.phinvads#0.12.0",
+        "ihe.formatcode.fhir#1.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.pacio-rt#current",
+      "name": "hl7.fhir.us.pacio-rt",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.tools#current",
+        "hl7.terminology.r4#4.0.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "fhir.gdx#current",
+      "name": "fhir.gdx",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.genomics-reporting#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.vr-common-library#current",
+      "name": "hl7.fhir.us.vr-common-library",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "us.cdc.phinvads#0.12.0",
+        "hl7.fhir.uv.extensions#1.0.0",
+        "hl7.fhir.us.vrdr#2.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.security-label-ds4p#current",
+      "name": "hl7.fhir.uv.security-label-ds4p",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology#5.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.hai-ltcf#current",
+      "name": "hl7.fhir.us.hai-ltcf",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-crd#current",
+      "name": "hl7.fhir.us.davinci-crd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "hl7.fhir.us.davinci-hrex#1.0.0",
+        "us.nlm.vsac#0.11.0"
+      ]
+    },
+    {
+      "id": "fhir.SLexampleIG#current",
+      "name": "fhir.SLexampleIG",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-alis#current",
+      "name": "ch.fhir.ig.ch-alis",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-core#2.0.x"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.core#current",
+      "name": "hl7.fhir.be.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.au.ips#current",
+      "name": "hl7.fhir.au.ips",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.1.0",
+        "hl7.fhir.au.core#current"
+      ]
+    },
+    {
+      "id": "ihe.iti.svcm#current",
+      "name": "ihe.iti.svcm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.iti.balp#1.1.x"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ihe-sdc-ecc#current",
+      "name": "hl7.fhir.uv.ihe-sdc-ecc",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ae-research-ig#current",
+      "name": "hl7.fhir.uv.ae-research-ig",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "uptis-fhir-poc#current",
+      "name": "uptis-fhir-poc",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions#current",
+        "hl7.fhir.ee.base#current"
+      ]
+    },
+    {
+      "id": "fhir.cqf.ccc#current",
+      "name": "fhir.cqf.ccc",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.cpg#1.0.0",
+        "fhir.cqf.common#4.0.1"
+      ]
+    },
+    {
+      "id": "ncez.cz.fhir.imaging#current",
+      "name": "ncez.cz.fhir.imaging",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current",
+        "hl7.fhir.us.mcode#current",
+        "ncez.cz.fhir.core#current"
+      ]
+    },
+    {
+      "id": "ihe.pharm.meow#current",
+      "name": "ihe.pharm.meow",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pct#current",
+      "name": "hl7.fhir.us.davinci-pct",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.davinci-hrex#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.ee.base#current",
+      "name": "hl7.fhir.ee.base",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions#current"
+      ]
+    },
+    {
+      "id": "cs.lim#current",
+      "name": "cs.lim",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "care.commonprofiles.fhir#current",
+      "name": "care.commonprofiles.fhir",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7se.fhir.base#1.0.0"
+      ]
+    },
+    {
+      "id": "fhir.zentricx-grupo-b#current",
+      "name": "fhir.zentricx-grupo-b",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.org.nz.fhir.ig.cca#current",
+      "name": "hl7.org.nz.fhir.ig.cca",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.directory-exchange#current",
+      "name": "hl7.fhir.us.directory-exchange",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#4.0.0",
+        "hl7.fhir.us.directory-query#1.0.0-ballot"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.lower-extremity-skin-wound-assessment#current",
+      "name": "hl7.fhir.us.lower-extremity-skin-wound-assessment",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#3.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.hsds#current",
+      "name": "hl7.fhir.us.hsds",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.davinci-pdex-plan-net#1.1.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-ig#current",
+      "name": "ch.fhir.ig.ch-ig",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-core#3.0.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.pixm#current",
+      "name": "ihe.iti.pixm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.iti.balp#1.1.x"
+      ]
+    },
+    {
+      "id": "ihe.iti.aips#current",
+      "name": "ihe.iti.aips",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.0.x",
+        "ihe.iti.mhd#4.2.x"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-ra#current",
+      "name": "hl7.fhir.us.davinci-ra",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.xpandh#current",
+      "name": "hl7.eu.fhir.xpandh",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.vitals#current",
+      "name": "hl7.fhir.us.vitals",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-elm#current",
+      "name": "ch.fhir.ig.ch-elm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "ch.fhir.ig.ch-lab-report#dev",
+        "ch.fhir.ig.ch-core#current",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.mcsd#current",
+      "name": "ihe.iti.mcsd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ihe.iti.balp#current"
+      ]
+    },
+    {
+      "id": "hl7.cda.uv.core#current",
+      "name": "hl7.cda.uv.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.pdmp#current",
+      "name": "hl7.fhir.us.pdmp",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "fhir.org.nz.ig.base#current",
+      "name": "fhir.org.nz.ig.base",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.co.CoreCO#current",
+      "name": "hl7.fhir.co.CoreCO",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "ihe-fhir-pharm-medicationrecord#current",
+      "name": "ihe-fhir-pharm-medicationrecord",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.org.nz.fhir.ig.formulary#current",
+      "name": "hl7.org.nz.fhir.ig.formulary",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "uk-core-access#current",
+      "name": "uk-core-access",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "fhir.r4.ukcore.stu1#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.hai#current",
+      "name": "hl7.fhir.us.hai",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "icare#current",
+      "name": "icare",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#4.0.0",
+        "hl7.fhir.us.mcode#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.it.terminology#current",
+      "name": "hl7.fhir.it.terminology",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.sirb#current",
+      "name": "hl7.fhir.us.sirb",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.sdc#3.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-deqm#current",
+      "name": "hl7.fhir.us.davinci-deqm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.qicore#5.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.cqfmeasures#current"
+      ]
+    },
+    {
+      "id": "johnmoehrke.consentwithsegmentation#current",
+      "name": "johnmoehrke.consentwithsegmentation",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-atr#current",
+      "name": "hl7.fhir.us.davinci-atr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.bulkdata#1.0.1",
+        "hl7.fhir.uv.smart-app-launch#2.0.0",
+        "hl7.fhir.us.davinci-pdex-plan-net#1.1.0",
+        "hl7.fhir.us.davinci-hrex#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.phd#current",
+      "name": "hl7.fhir.uv.phd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0"
+      ]
+    },
+    {
+      "id": "mitre.fast.access-control#current",
+      "name": "mitre.fast.access-control",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.epi-test#current",
+      "name": "hl7.fhir.uv.epi-test",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.emedicinal-product-info#current",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "johnmoehrke.slicingslicedextension#current",
+      "name": "johnmoehrke.slicingslicedextension",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "johnmoehrke.testConsent.example#current",
+      "name": "johnmoehrke.testConsent.example",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "au.csiro.fhir.au-primarycare#current",
+      "name": "au.csiro.fhir.au-primarycare",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.au.base#current",
+        "hl7.fhir.au.core#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.nl.fhir-ig-sandbox-stu3#current",
+      "name": "hl7.fhir.nl.fhir-ig-sandbox-stu3",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2",
+        "hl7.terminology.r3#4.0.0",
+        "nictiz.fhir.nl.stu3.zib2017#2.2.13"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-cdex#current",
+      "name": "hl7.fhir.us.davinci-cdex",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.davinci-hrex#1.0.0",
+        "hl7.fhir.us.davinci-pas#1.2.0-ballot",
+        "hl7.fhir.us.carin-bb#2.0.0",
+        "hl7.fhir.us.davinci-dtr#1.1.0-ballot",
+        "hl7.fhir.uv.sdc#3.0.0"
+      ]
+    },
+    {
+      "id": "terminology-services#current",
+      "name": "terminology-services",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "johnmoehrke.testbinary#current",
+      "name": "johnmoehrke.testbinary",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0",
+        "fhir.dicom#2023.3.20230704"
+      ]
+    },
+    {
+      "id": "hl7.fhir.au.core#current",
+      "name": "hl7.fhir.au.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.au.base#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.bfdr#current",
+      "name": "hl7.fhir.us.bfdr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.vr-common-library#current",
+        "us.nlm.vsac#0.9.0",
+        "us.cdc.phinvads#0.12.0",
+        "hl7.fhir.us.odh#1.3.0"
+      ]
+    },
+    {
+      "id": "path.vn.terminology#current",
+      "name": "path.vn.terminology",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.xpandh.lab#current",
+      "name": "hl7.eu.fhir.xpandh.lab",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.eu.laboratory#current",
+        "hl7.fhir.uv.ips#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.carin-bb#current",
+      "name": "hl7.fhir.us.carin-bb",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "us.nlm.vsac#0.7.0"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.metadata.core#current",
+      "name": "medcom.fhir.dk.metadata.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "medcom.fhir.dk.xds.metadata#dev"
+      ]
+    },
+    {
+      "id": "hl7.org.nz.fhir.ig.mdr#current",
+      "name": "hl7.org.nz.fhir.ig.mdr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.org.nz.fhir.ig.formulary#current",
+        "fhir.org.nz.ig.base#current"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.xds.metadata#current",
+      "name": "medcom.fhir.dk.xds.metadata",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "actnow.canshare.co.nz#current",
+      "name": "actnow.canshare.co.nz",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.mcode#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pcde#current",
+      "name": "hl7.fhir.us.davinci-pcde",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "hl7.fhir.us.core#3.1.0",
+        "hl7.fhir.us.davinci-hrex#0.2.0",
+        "hl7.fhir.us.davinci-pdex#1.0.0",
+        "hl7.fhir.us.davinci-pas#1.0.0",
+        "hl7.fhir.uv.subscriptions-backport#0.1.0"
+      ]
+    },
+    {
+      "id": "who.fhir.core#current",
+      "name": "who.fhir.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.directory-attestation#current",
+      "name": "hl7.fhir.us.directory-attestation",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#4.0.0",
+        "hl7.fhir.us.directory-exchange#1.0.0-ballot",
+        "hl7.fhir.us.directory-query#1.0.0-ballot",
+        "hl7.fhir.us.davinci-pdex-plan-net#1.1.0"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.gk-poc-ai#current",
+      "name": "hl7.eu.fhir.gk-poc-ai",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.ihe.xds.metadata#current",
+      "name": "medcom.fhir.dk.ihe.xds.metadata",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "fhir.org.nz.ig.northernregion#current",
+      "name": "fhir.org.nz.ig.northernregion",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "fhir.org.nz.ig.base#dev"
+      ]
+    },
+    {
+      "id": "hl7.fhir.mi.base#current",
+      "name": "hl7.fhir.mi.base",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.messaging#current",
+      "name": "medcom.fhir.dk.messaging",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#2.0.0",
+        "medcom.fhir.dk.core#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.pacio-cs#current",
+      "name": "hl7.fhir.us.pacio-cs",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.sdc#2.7.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.odh#current",
+      "name": "hl7.fhir.us.odh",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "us.cdc.phinvads#0.12.0"
+      ]
+    },
+    {
+      "id": "tewhatuora.govt.nz.fhir.guide#current",
+      "name": "tewhatuora.govt.nz.fhir.guide",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.ccda#current",
+      "name": "hl7.fhir.us.ccda",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.0"
+      ]
+    },
+    {
+      "id": "idmp-datafeed#current",
+      "name": "idmp-datafeed",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.livd#current",
+      "name": "hl7.fhir.uv.livd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "fhir.uv.crossborderdataexchange#current",
+      "name": "fhir.uv.crossborderdataexchange",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.0.0"
+      ]
+    },
+    {
+      "id": "fhir.nachc.hiv-cds#current",
+      "name": "fhir.nachc.hiv-cds",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.cpg#1.0.0",
+        "fhir.cqf.common#4.0.1",
+        "hl7.fhir.us.qicore#4.0.1"
+      ]
+    },
+    {
+      "id": "tewhatuora.fhir.ig.nzips#current",
+      "name": "tewhatuora.fhir.ig.nzips",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current",
+        "fhir.org.nz.ig.base#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.sdc#current",
+      "name": "hl7.fhir.uv.sdc",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.r4.examples#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.directory-query#current",
+      "name": "hl7.fhir.us.directory-query",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#4.0.0"
+      ]
+    },
+    {
+      "id": "mycompany.fhir.foodallergyExample#current",
+      "name": "mycompany.fhir.foodallergyExample",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.cl.corecl#current",
+      "name": "hl7.fhir.cl.corecl",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-dtr#current",
+      "name": "hl7.fhir.us.davinci-dtr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "hl7.fhir.us.davinci-hrex#1.0.0",
+        "hl7.fhir.us.davinci-crd#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.it.dossierpharma#current",
+      "name": "hl7.fhir.it.dossierpharma",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.it.base#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.it.lab-report#current",
+      "name": "hl7.fhir.it.lab-report",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.it.terminology#current"
+      ]
+    },
+    {
+      "id": "ihe.rad.imr#current",
+      "name": "ihe.rad.imr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.core-clinical#current",
+      "name": "hl7.fhir.be.core-clinical",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.be.core#current"
+      ]
+    },
+    {
+      "id": "ncez.cz.fhir.core#current",
+      "name": "ncez.cz.fhir.core",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.au.base#current",
+      "name": "hl7.fhir.au.base",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.medmorph-research-dex#current",
+      "name": "hl7.fhir.us.medmorph-research-dex",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#4.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.bulkdata#1.0.0",
+        "hl7.fhir.us.medmorph#0.2.0",
+        "hl7.fhir.us.cdmh#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.home-lab-report#current",
+      "name": "hl7.fhir.us.home-lab-report",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.au.draft.diagnostic-orders#current",
+      "name": "hl7.fhir.au.draft.diagnostic-orders",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.au.base#current",
+        "hl7.fhir.au.core#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.identity-matching#current",
+      "name": "hl7.fhir.us.identity-matching",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "hl7.org.nz.fhir.ig.icp#current",
+      "name": "hl7.org.nz.fhir.ig.icp",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "fhir.org.nz.ig.base#2.0.0"
+      ]
+    },
+    {
+      "id": "ncez.cz.fhir.lab#current",
+      "name": "ncez.cz.fhir.lab",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current",
+        "ncez.cz.fhir.core#current"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-epr-ppqm#current",
+      "name": "ch.fhir.ig.ch-epr-ppqm",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-epr-term#current"
+      ]
+    },
+    {
+      "id": "ihe.palm.rpc#current",
+      "name": "ihe.palm.rpc",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.ecr#current",
+      "name": "hl7.fhir.us.ecr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#4.0.0",
+        "us.nlm.vsac#0.7.0",
+        "us.cdc.phinvads#0.10.0",
+        "hl7.fhir.us.vr-common-library#1.0.0",
+        "hl7.fhir.us.odh#1.1.0",
+        "hl7.fhir.uv.bulkdata#1.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.bser#current",
+      "name": "hl7.fhir.us.bser",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "us.cdc.phinvads#0.12.0",
+        "us.nlm.vsac#0.11.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.odh#1.3.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.order-catalog#current",
+      "name": "hl7.fhir.uv.order-catalog",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.pcsp#current",
+      "name": "hl7.eu.fhir.pcsp",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#current",
+        "hl7.fhir.us.mcode#current"
+      ]
+    },
+    {
+      "id": "hl7.eu.fhir.idea4rc#current",
+      "name": "hl7.eu.fhir.idea4rc",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.mcode#current",
+        "hl7.fhir.uv.ips#current"
+      ]
+    },
+    {
+      "id": "hl7.cda.us.eyecare#current",
+      "name": "hl7.cda.us.eyecare",
+      "version": "current",
+      "dependencies": [
+        "hl7.terminology.r5#5.0.0",
+        "hl7.fhir.uv.extensions.r5#1.0.0",
+        "hl7.cda.us.ccda#current",
+        "hl7.cda.uv.core#current",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "smart-immunizations-mini#current",
+      "name": "smart-immunizations-mini",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.pacio-fs#current",
+      "name": "hl7.fhir.us.pacio-fs",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.uv.sdc#2.7.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.registry-protocols#current",
+      "name": "hl7.fhir.us.registry-protocols",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#5.0.1"
+      ]
+    },
+    {
+      "id": "medcom.fhir.dk.acknowledgement#current",
+      "name": "medcom.fhir.dk.acknowledgement",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.dk.core#2.0.0",
+        "medcom.fhir.dk.core#dev",
+        "medcom.fhir.dk.messaging#dev"
+      ]
+    },
+    {
+      "id": "medcom.sor.mcsd#current",
+      "name": "medcom.sor.mcsd",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "ihe.iti.balp#current"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.mihr#current",
+      "name": "hl7.fhir.us.mihr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.us.core#5.0.1",
+        "hl7.fhir.us.vr-common-library#1.0.0",
+        "hl7.fhir.us.bfdr#1.0.0",
+        "us.nlm.vsac#0.9.0",
+        "fhir.cqf.common#4.0.1",
+        "hl7.fhir.us.cqfmeasures#3.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-laboratory-report#current",
+      "name": "ch.fhir.ig.ch-laboratory-report",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "ch.fhir.ig.ch-core#current",
+        "hl7.fhir.eu.laboratory#current"
+      ]
+    },
+    {
+      "id": "fhir.uv.researchdatasharing#current",
+      "name": "fhir.uv.researchdatasharing",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.0.0"
+      ]
+    },
+    {
+      "id": "au.digitalhealth.stu3.medicare-records#current",
+      "name": "au.digitalhealth.stu3.medicare-records",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2",
+        "hl7.terminology.r3#5.0.0",
+        "hl7.fhir.au.base#0.9.3"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.covid19library#current",
+      "name": "hl7.fhir.us.covid19library",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "hl7.fhir.us.core#3.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.davinci-vbpr#current",
+      "name": "hl7.fhir.us.davinci-vbpr",
+      "version": "current",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.us.core#3.1.1",
+        "hl7.fhir.us.davinci-deqm#3.1.0",
+        "hl7.fhir.us.cqfmeasures#3.0.0"
+      ]
+    },
+    {
+      "id": "fhir.argonaut.clinicalnotes#1.0.0",
+      "name": "fhir.argonaut.clinicalnotes",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.carin-rtpbc#1.0.0",
+      "name": "hl7.fhir.us.carin-rtpbc",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#3.1.0"
+      ]
+    },
+    {
+      "id": "us.cdc.phinvads#0.12.0",
+      "name": "us.cdc.phinvads",
+      "version": "0.12.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "eMERGEClinicalGeneticsReports.FHIRExtensionResources#0.1.3",
+      "name": "eMERGEClinicalGeneticsReports.FHIRExtensionResources",
+      "version": "0.1.3",
+      "dependencies": [
+        "simplifier.core.r4#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.subscriptions-backport.r4#1.1.0",
+      "name": "hl7.fhir.uv.subscriptions-backport.r4",
+      "version": "1.1.0",
+      "dependencies": [
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.r4.core#4.0.0"
+      ]
+    },
+    {
+      "id": "ans.fhir.fr.annuaire#1.0.0-ballot-2",
+      "name": "ans.fhir.fr.annuaire",
+      "version": "1.0.0-ballot-2",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.fr.core#1.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.cdisc-lab#1.0.0",
+      "name": "hl7.fhir.uv.cdisc-lab",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.sdc#2.7.0",
+        "hl7.fhir.us.core#3.1.0"
+      ]
+    },
+    {
+      "id": "fhir.tx.support.r4#0.19.0",
+      "name": "fhir.tx.support.r4",
+      "version": "0.19.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "fhir.tx.support.r3#0.20.0",
+      "name": "fhir.tx.support.r3",
+      "version": "0.20.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "nictiz.fhir.nl.stu3.zib2017#2.2.15",
+      "name": "nictiz.fhir.nl.stu3.zib2017",
+      "version": "2.2.15",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r5#1.0.0",
+      "name": "hl7.fhir.uv.extensions.r5",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r5.core#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r3#1.0.0",
+      "name": "hl7.fhir.uv.extensions.r3",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r4#1.0.0",
+      "name": "hl7.fhir.uv.extensions.r4",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "d3b.kidsfirst.r4#0.1.0",
+      "name": "d3b.kidsfirst.r4",
+      "version": "0.1.0",
+      "dependencies": [
+        "simplifier.core.r4#4.0.1"
+      ]
+    },
+    {
+      "id": "FHIRDevDaysPackage.Test#1.0.0",
+      "name": "FHIRDevDaysPackage.Test",
+      "version": "1.0.0",
+      "dependencies": [
+        "devdays.r4.example.conformanceresources#1.0.0",
+        "simplifier.core.r4#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.medication#1.0.0",
+      "name": "hl7.fhir.be.medication",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.be.core#2.0.0",
+        "hl7.terminology#3.1.0"
+      ]
+    },
+    {
+      "id": "ans.fhir.fr.eclaire#0.1.0",
+      "name": "ans.fhir.fr.eclaire",
+      "version": "0.1.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.phcp#1.0.0",
+      "name": "hl7.fhir.us.phcp",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.ccda#1.1.0",
+        "hl7.fhir.us.core#3.1.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.immds#0.2.0",
+      "name": "hl7.fhir.uv.immds",
+      "version": "0.2.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.cl.clcore#1.8.4",
+      "name": "hl7.fhir.cl.clcore",
+      "version": "1.8.4",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.0.0"
+      ]
+    },
+    {
+      "id": "SUPPORT.R4#3.0.0",
+      "name": "SUPPORT.R4",
+      "version": "3.0.0",
+      "dependencies": [
+        "simplifier.core.r4#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.womens-health-registries#0.2.0",
+      "name": "hl7.fhir.us.womens-health-registries",
+      "version": "0.2.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.sdc.r4b#3.0.0",
+      "name": "hl7.fhir.uv.sdc.r4b",
+      "version": "3.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.examples#4.0.1",
+        "hl7.fhir.r4b.core#4.3.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-ems#1.9.0",
+      "name": "ch.fhir.ig.ch-ems",
+      "version": "1.9.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "ch.fhir.ig.ch-core#1.0.0",
+        "ch.fhir.ig.ch-epr-term#2.0.4"
+      ]
+    },
+    {
+      "id": "hl7.fhir.xver.r4#1.2.0",
+      "name": "hl7.fhir.xver.r4",
+      "version": "1.2.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.xver.r3#1.2.1",
+      "name": "hl7.fhir.xver.r3",
+      "version": "1.2.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.meds#1.2.0",
+      "name": "hl7.fhir.us.meds",
+      "version": "1.2.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "ans.fhir.fr.ror#0.1.1",
+      "name": "ans.fhir.fr.ror",
+      "version": "0.1.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "ans.annuaire.fhir.r4#0.2.0",
+        "hl7.fhir.fr.core#1.1.0"
+      ]
+    },
+    {
+      "id": "basisprofil.de#0.2.40",
+      "name": "basisprofil.de",
+      "version": "0.2.40",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.Davinci-drug-formulary#2.0.0",
+      "name": "hl7.fhir.us.Davinci-drug-formulary",
+      "version": "2.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "hl7.fhir.us.davinci-pdex-plan-net#1.0.0",
+        "hl7.fhir.us.davinci-hrex#1.0.0"
+      ]
+    },
+    {
+      "id": "swiss.mednet.fhir#0.15.0",
+      "name": "swiss.mednet.fhir",
+      "version": "0.15.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "ch.fhir.ig.ch-core#2.0.0",
+        "ch.fhir.ig.ch-orf#1.0.0",
+        "ch.fhir.ig.ch-emed#2.0.0"
+      ]
+    },
+    {
+      "id": "ans.fhir.fr.mesures#3.0.1",
+      "name": "ans.fhir.fr.mesures",
+      "version": "3.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.fr.core#1.1.0",
+        "hl7.fhir.uv.phd#1.0.0"
+      ]
+    },
+    {
+      "id": "fhir.argonaut.pd#1.0.0",
+      "name": "fhir.argonaut.pd",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.1"
+      ]
+    },
+    {
+      "id": "ans.fhir.fr.pdsm#3.0.1",
+      "name": "ans.fhir.fr.pdsm",
+      "version": "3.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "ihe.iti.mhd#4.2.0",
+        "ans.annuaire.fhir.r4#0.2.0",
+        "hl7.fhir.fr.core#1.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.be.allergy#1.1.0",
+      "name": "hl7.fhir.be.allergy",
+      "version": "1.1.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.be.core#2.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.patient-reported-outcomes#0.2.0",
+      "name": "hl7.fhir.us.patient-reported-outcomes",
+      "version": "0.2.0",
+      "dependencies": [
+        "hl7.fhir.uv.sdc#current",
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-rad-order#1.0.0",
+      "name": "ch.fhir.ig.ch-rad-order",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "ch.fhir.ig.ch-core#2.0.0",
+        "ch.fhir.ig.ch-orf#1.0.0"
+      ]
+    },
+    {
+      "id": "jp-core.draft#1.0.7",
+      "name": "jp-core.draft",
+      "version": "1.0.7",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "tw.gov.mohw.twcore#0.1.1",
+      "name": "tw.gov.mohw.twcore",
+      "version": "0.1.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.fhir.uv.ips#1.1.0"
+      ]
+    },
+    {
+      "id": "fhir.r4.ukcore.stu1#1.0.4",
+      "name": "fhir.r4.ukcore.stu1",
+      "version": "1.0.4",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "fhir.argonaut.r2#1.0.0",
+      "name": "fhir.argonaut.r2",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r2.core#1.0.2"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.cda-fhir-maps#0.3.0",
+      "name": "ch.fhir.ig.cda-fhir-maps",
+      "version": "0.3.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.cda#dev",
+        "ch.fhir.ig.ch-emed#2.0.0"
+      ]
+    },
+    {
+      "id": "ehealthplatform.be.r4.federalprofiles#1.3.3-beta",
+      "name": "ehealthplatform.be.r4.federalprofiles",
+      "version": "1.3.3-beta",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "fhir.cqf.common#4.0.1",
+      "name": "fhir.cqf.common",
+      "version": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.cpg#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.subscriptions-backport.r4b#1.1.0",
+      "name": "hl7.fhir.uv.subscriptions-backport.r4b",
+      "version": "1.1.0",
+      "dependencies": [
+        "hl7.fhir.r4b.core#4.3.0",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.mhealth-framework#0.1.0",
+      "name": "hl7.fhir.uv.mhealth-framework",
+      "version": "0.1.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "testprojekt.sl.r4#0.0.2",
+      "name": "testprojekt.sl.r4",
+      "version": "0.0.2",
+      "dependencies": [
+        "BCPatientSummary.Draft#0.0.1-draft",
+        "ufp.core#0.4.0",
+        "simplifier.core.r4#4.0.1"
+      ]
+    },
+    {
+      "id": "ufp.core#0.6.0",
+      "name": "ufp.core",
+      "version": "0.6.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "ch.chmed20af.emediplan#2.0.0",
+      "name": "ch.chmed20af.emediplan",
+      "version": "2.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "ch.fhir.ig.ch-emed#1.0.0"
+      ]
+    },
+    {
+      "id": "ca.infoway.io.psca#1.0.1-alpha3",
+      "name": "ca.infoway.io.psca",
+      "version": "1.0.1-alpha3",
+      "dependencies": [
+        "hl7.fhir.uv.ips#1.1.0",
+        "hl7.fhir.ca.baseline#1.1.3",
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.breastcancer#0.2.0",
+      "name": "hl7.fhir.us.breastcancer",
+      "version": "0.2.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.bulkdata#0.1.0",
+      "name": "hl7.fhir.us.bulkdata",
+      "version": "0.1.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.immds#1.0.0",
+      "name": "hl7.fhir.us.immds",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#3.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.dk.core#2.2.0",
+      "name": "hl7.fhir.dk.core",
+      "version": "2.2.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0",
+        "hl7.fhir.uv.phd#1.0.0"
+      ]
+    },
+    {
+      "id": "us.nlm.vsac#0.11.0",
+      "name": "us.nlm.vsac",
+      "version": "0.11.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.swissnoso#1.0.0",
+      "name": "ch.fhir.ig.swissnoso",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "ch.fhir.ig.ch-core#2.0.0"
+      ]
+    },
+    {
+      "id": "ch.fhir.ig.ch-crl#0.9.0",
+      "name": "ch.fhir.ig.ch-crl",
+      "version": "0.9.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "ch.fhir.ig.ch-core#2.0.0"
+      ]
+    },
+    {
+      "id": "hl7se.fhir.base#1.0.0",
+      "name": "hl7se.fhir.base",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#5.0.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.sdc.r4#3.0.0",
+      "name": "hl7.fhir.uv.sdc.r4",
+      "version": "3.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.r4.examples#4.0.1"
+      ]
+    },
+    {
+      "id": "fhir.cdc.opioid-mme-r4#3.0.0",
+      "name": "fhir.cdc.opioid-mme-r4",
+      "version": "3.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.cpg#1.0.0",
+        "fhir.cqf.common#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.no.basis#2.1.2",
+      "name": "hl7.fhir.no.basis",
+      "version": "2.1.2",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "fhir.argonaut.scheduling#1.0.0",
+      "name": "fhir.argonaut.scheduling",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.1"
+      ]
+    },
+    {
+      "id": "fhir.dicom#2023.3.20230704",
+      "name": "fhir.dicom",
+      "version": "2023.3.20230704",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.nhsn-med-admin#1.0.0",
+      "name": "hl7.fhir.us.nhsn-med-admin",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.us.core#3.1.1",
+        "us.nlm.vsac#0.4.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.us.daf#2.0.0",
+      "name": "hl7.fhir.us.daf",
+      "version": "2.0.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "devdays.r4.example.conformanceresources#1.0.0",
+      "name": "devdays.r4.example.conformanceresources",
+      "version": "1.0.0",
+      "dependencies": [
+        "simplifier.core.r4#4.0.1"
+      ]
+    },
+    {
+      "id": "fhir.argonaut.questionnaire#1.0.0",
+      "name": "fhir.argonaut.questionnaire",
+      "version": "1.0.0",
+      "dependencies": [
+        "hl7.fhir.r3.core#3.0.2"
+      ]
+    },
+    {
+      "id": "BCPatientSummary.Draft#0.0.1-draft",
+      "name": "BCPatientSummary.Draft",
+      "version": "0.0.1-draft",
+      "dependencies": []
+    },
+    {
+      "id": "ans.annuaire.fhir.r4#0.2.0",
+      "name": "ans.annuaire.fhir.r4",
+      "version": "0.2.0",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-allergyintolerance#2.0.0-ballot",
+      "name": "ch.fhir.ig.ch-allergyintolerance",
+      "version": "2.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-core#1.0.0",
+      "name": "ch.fhir.ig.ch-core",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-core#2.0.0",
+      "name": "ch.fhir.ig.ch-core",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-core#2.0.x",
+      "name": "ch.fhir.ig.ch-core",
+      "version": "2.0.x",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-core#3.0.0",
+      "name": "ch.fhir.ig.ch-core",
+      "version": "3.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-core#4.0.0-ballot",
+      "name": "ch.fhir.ig.ch-core",
+      "version": "4.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-emed#1.0.0",
+      "name": "ch.fhir.ig.ch-emed",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-emed#2.0.0",
+      "name": "ch.fhir.ig.ch-emed",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-emed#4.0.0-ballot",
+      "name": "ch.fhir.ig.ch-emed",
+      "version": "4.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-epr-term#2.0.4",
+      "name": "ch.fhir.ig.ch-epr-term",
+      "version": "2.0.4",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-epr-term#2.0.9",
+      "name": "ch.fhir.ig.ch-epr-term",
+      "version": "2.0.9",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-epr-term#2.0.x",
+      "name": "ch.fhir.ig.ch-epr-term",
+      "version": "2.0.x",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-lab-order#2.0.0-ballot",
+      "name": "ch.fhir.ig.ch-lab-order",
+      "version": "2.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-lab-report#dev",
+      "name": "ch.fhir.ig.ch-lab-report",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-orf#1.0.0",
+      "name": "ch.fhir.ig.ch-orf",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-orf#2.0.0-ballot",
+      "name": "ch.fhir.ig.ch-orf",
+      "version": "2.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "ch.fhir.ig.ch-vacd#4.0.0-ballot",
+      "name": "ch.fhir.ig.ch-vacd",
+      "version": "4.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "de.basisprofil.r4#1.3.2",
+      "name": "de.basisprofil.r4",
+      "version": "1.3.2",
+      "dependencies": []
+    },
+    {
+      "id": "fhir.cdc.opioid-cds-r4#dev",
+      "name": "fhir.cdc.opioid-cds-r4",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "fhir.dicom#2021.4.20210910",
+      "name": "fhir.dicom",
+      "version": "2021.4.20210910",
+      "dependencies": []
+    },
+    {
+      "id": "fhir.dicom#2022.4.20221006",
+      "name": "fhir.dicom",
+      "version": "2022.4.20221006",
+      "dependencies": []
+    },
+    {
+      "id": "fhir.dicom#2023.1.20230123",
+      "name": "fhir.dicom",
+      "version": "2023.1.20230123",
+      "dependencies": []
+    },
+    {
+      "id": "fhir.org.nz.ig.base#2.0.0",
+      "name": "fhir.org.nz.ig.base",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "fhir.org.nz.ig.base#dev",
+      "name": "fhir.org.nz.ig.base",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "fhir.r4.ukcore.stu1#1.0.0",
+      "name": "fhir.r4.ukcore.stu1",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.au.base#0.9.3",
+      "name": "hl7.fhir.au.base",
+      "version": "0.9.3",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.au.base#4.1.0-ballot",
+      "name": "hl7.fhir.au.base",
+      "version": "4.1.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.be.core#2.0.0",
+      "name": "hl7.fhir.be.core",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.be.core#2.0.1",
+      "name": "hl7.fhir.be.core",
+      "version": "2.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.be.core-clinical#1.0.0",
+      "name": "hl7.fhir.be.core-clinical",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.ca.baseline#1.1.3",
+      "name": "hl7.fhir.ca.baseline",
+      "version": "1.1.3",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.cda#dev",
+      "name": "hl7.fhir.cda",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.cl.corecl#1.7.0",
+      "name": "hl7.fhir.cl.corecl",
+      "version": "1.7.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.dk.core#1.1.0",
+      "name": "hl7.fhir.dk.core",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.dk.core#2.0.0",
+      "name": "hl7.fhir.dk.core",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.dk.core#2.1.0",
+      "name": "hl7.fhir.dk.core",
+      "version": "2.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.fr.core#1.1.0",
+      "name": "hl7.fhir.fr.core",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.it.base#current",
+      "name": "hl7.fhir.it.base",
+      "version": "current",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.r2.core#1.0.2",
+      "name": "hl7.fhir.r2.core",
+      "version": "1.0.2",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.r3.core#3.0.1",
+      "name": "hl7.fhir.r3.core",
+      "version": "3.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.r3.core#3.0.2",
+      "name": "hl7.fhir.r3.core",
+      "version": "3.0.2",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.r4.core#4.0.0",
+      "name": "hl7.fhir.r4.core",
+      "version": "4.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.r4.core#4.0.1",
+      "name": "hl7.fhir.r4.core",
+      "version": "4.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.r4.examples#4.0.1",
+      "name": "hl7.fhir.r4.examples",
+      "version": "4.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.r4b.core#4.3.0",
+      "name": "hl7.fhir.r4b.core",
+      "version": "4.3.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.r5.core#5.0.0",
+      "name": "hl7.fhir.r5.core",
+      "version": "5.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.bfdr#1.0.0",
+      "name": "hl7.fhir.us.bfdr",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.carin-bb#2.0.0",
+      "name": "hl7.fhir.us.carin-bb",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.ccda#1.1.0",
+      "name": "hl7.fhir.us.ccda",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.cdmh#1.0.0",
+      "name": "hl7.fhir.us.cdmh",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.core#3.1.0",
+      "name": "hl7.fhir.us.core",
+      "version": "3.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.core#3.1.1",
+      "name": "hl7.fhir.us.core",
+      "version": "3.1.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.core#4.0.0",
+      "name": "hl7.fhir.us.core",
+      "version": "4.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.core#5.0.1",
+      "name": "hl7.fhir.us.core",
+      "version": "5.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.core#6.1.0",
+      "name": "hl7.fhir.us.core",
+      "version": "6.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.cqfmeasures#3.0.0",
+      "name": "hl7.fhir.us.cqfmeasures",
+      "version": "3.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-deqm#3.1.0",
+      "name": "hl7.fhir.us.davinci-deqm",
+      "version": "3.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-dtr#1.1.0-ballot",
+      "name": "hl7.fhir.us.davinci-dtr",
+      "version": "1.1.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-hrex#0.1.0",
+      "name": "hl7.fhir.us.davinci-hrex",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-hrex#0.2.0",
+      "name": "hl7.fhir.us.davinci-hrex",
+      "version": "0.2.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-hrex#1.0.0",
+      "name": "hl7.fhir.us.davinci-hrex",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pas#1.0.0",
+      "name": "hl7.fhir.us.davinci-pas",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pas#1.2.0-ballot",
+      "name": "hl7.fhir.us.davinci-pas",
+      "version": "1.2.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pdex#1.0.0",
+      "name": "hl7.fhir.us.davinci-pdex",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pdex-plan-net#1.0.0",
+      "name": "hl7.fhir.us.davinci-pdex-plan-net",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.davinci-pdex-plan-net#1.1.0",
+      "name": "hl7.fhir.us.davinci-pdex-plan-net",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.directory-exchange#1.0.0-ballot",
+      "name": "hl7.fhir.us.directory-exchange",
+      "version": "1.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.directory-query#1.0.0-ballot",
+      "name": "hl7.fhir.us.directory-query",
+      "version": "1.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.mcode#1.16.0",
+      "name": "hl7.fhir.us.mcode",
+      "version": "1.16.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.mcode#2.0.0",
+      "name": "hl7.fhir.us.mcode",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.mcode#2.1.0",
+      "name": "hl7.fhir.us.mcode",
+      "version": "2.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.mcode#3.0.0-ballot",
+      "name": "hl7.fhir.us.mcode",
+      "version": "3.0.0-ballot",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.medmorph#0.1.0",
+      "name": "hl7.fhir.us.medmorph",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.medmorph#0.2.0",
+      "name": "hl7.fhir.us.medmorph",
+      "version": "0.2.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.medmorph#1.0.0",
+      "name": "hl7.fhir.us.medmorph",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.odh#1.0.0",
+      "name": "hl7.fhir.us.odh",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.odh#1.1.0",
+      "name": "hl7.fhir.us.odh",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.odh#1.2.0",
+      "name": "hl7.fhir.us.odh",
+      "version": "1.2.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.odh#1.3.0",
+      "name": "hl7.fhir.us.odh",
+      "version": "1.3.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.qicore#4.0.1",
+      "name": "hl7.fhir.us.qicore",
+      "version": "4.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.qicore#5.0.0",
+      "name": "hl7.fhir.us.qicore",
+      "version": "5.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.sdoh-clinicalcare#2.1.0",
+      "name": "hl7.fhir.us.sdoh-clinicalcare",
+      "version": "2.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.udap-security#0.1.0",
+      "name": "hl7.fhir.us.udap-security",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.udap-security#1.0.0",
+      "name": "hl7.fhir.us.udap-security",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.vr-common-library#1.0.0",
+      "name": "hl7.fhir.us.vr-common-library",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.vrdr#2.1.0",
+      "name": "hl7.fhir.us.vrdr",
+      "version": "2.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.bulkdata#1.0.0",
+      "name": "hl7.fhir.uv.bulkdata",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.bulkdata#1.0.1",
+      "name": "hl7.fhir.uv.bulkdata",
+      "version": "1.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.bulkdata#1.1.0",
+      "name": "hl7.fhir.uv.bulkdata",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.bulkdata#2.0.0",
+      "name": "hl7.fhir.uv.bulkdata",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.cpg#1.0.0",
+      "name": "hl7.fhir.uv.cpg",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.cpg#dev",
+      "name": "hl7.fhir.uv.cpg",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.extensions#1.0.0",
+      "name": "hl7.fhir.uv.extensions",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.genomics-reporting#1.0.0",
+      "name": "hl7.fhir.uv.genomics-reporting",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.genomics-reporting#2.0.0",
+      "name": "hl7.fhir.uv.genomics-reporting",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.ipa#1.0.0",
+      "name": "hl7.fhir.uv.ipa",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.ips#1.0.0",
+      "name": "hl7.fhir.uv.ips",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.ips#1.0.x",
+      "name": "hl7.fhir.uv.ips",
+      "version": "1.0.x",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.ips#1.1.0",
+      "name": "hl7.fhir.uv.ips",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.ips#1.1.x",
+      "name": "hl7.fhir.uv.ips",
+      "version": "1.1.x",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.order-catalog#0.1.0",
+      "name": "hl7.fhir.uv.order-catalog",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.phd#1.0.0",
+      "name": "hl7.fhir.uv.phd",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.sdc#2.7.0",
+      "name": "hl7.fhir.uv.sdc",
+      "version": "2.7.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.sdc#3.0.0",
+      "name": "hl7.fhir.uv.sdc",
+      "version": "3.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.smart-app-launch#2.0.0",
+      "name": "hl7.fhir.uv.smart-app-launch",
+      "version": "2.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.smart-app-launch#2.1.0",
+      "name": "hl7.fhir.uv.smart-app-launch",
+      "version": "2.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.subscriptions-backport#0.1.0",
+      "name": "hl7.fhir.uv.subscriptions-backport",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.uv.subscriptions-backport#1.1.0",
+      "name": "hl7.fhir.uv.subscriptions-backport",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.org.nz.fhir.ig.base#current",
+      "name": "hl7.org.nz.fhir.ig.base",
+      "version": "current",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology#1.0.0",
+      "name": "hl7.terminology",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology#3.1.0",
+      "name": "hl7.terminology",
+      "version": "3.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology#5.1.0",
+      "name": "hl7.terminology",
+      "version": "5.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology#5.2.0",
+      "name": "hl7.terminology",
+      "version": "5.2.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology.r3#4.0.0",
+      "name": "hl7.terminology.r3",
+      "version": "4.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology.r3#5.0.0",
+      "name": "hl7.terminology.r3",
+      "version": "5.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology.r4#3.1.0",
+      "name": "hl7.terminology.r4",
+      "version": "3.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology.r4#4.0.0",
+      "name": "hl7.terminology.r4",
+      "version": "4.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology.r4#5.0.0",
+      "name": "hl7.terminology.r4",
+      "version": "5.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.terminology.r5#5.0.0",
+      "name": "hl7.terminology.r5",
+      "version": "5.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.formatcode.fhir#1.1.0",
+      "name": "ihe.formatcode.fhir",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.formatcode.fhir#1.1.x",
+      "name": "ihe.formatcode.fhir",
+      "version": "1.1.x",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.balp#1.1.1",
+      "name": "ihe.iti.balp",
+      "version": "1.1.1",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.balp#1.1.x",
+      "name": "ihe.iti.balp",
+      "version": "1.1.x",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.mcsd#3.8.0",
+      "name": "ihe.iti.mcsd",
+      "version": "3.8.0",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.mcsd#3.8.x",
+      "name": "ihe.iti.mcsd",
+      "version": "3.8.x",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.mhd#4.2.0",
+      "name": "ihe.iti.mhd",
+      "version": "4.2.0",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.mhd#4.2.1",
+      "name": "ihe.iti.mhd",
+      "version": "4.2.1",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.mhd#4.2.x",
+      "name": "ihe.iti.mhd",
+      "version": "4.2.x",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.pdqm#2.4.0",
+      "name": "ihe.iti.pdqm",
+      "version": "2.4.0",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.pdqm#2.4.x",
+      "name": "ihe.iti.pdqm",
+      "version": "2.4.x",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.pixm#3.0.2",
+      "name": "ihe.iti.pixm",
+      "version": "3.0.2",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.pixm#3.0.3",
+      "name": "ihe.iti.pixm",
+      "version": "3.0.3",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.pmir#1.5.x",
+      "name": "ihe.iti.pmir",
+      "version": "1.5.x",
+      "dependencies": []
+    },
+    {
+      "id": "ihe.iti.svcm#1.5.1",
+      "name": "ihe.iti.svcm",
+      "version": "1.5.1",
+      "dependencies": []
+    },
+    {
+      "id": "il.core.fhir.r4#0.10.1-snapshots",
+      "name": "il.core.fhir.r4",
+      "version": "0.10.1-snapshots",
+      "dependencies": []
+    },
+    {
+      "id": "kl.dk.fhir.core#1.2.0",
+      "name": "kl.dk.fhir.core",
+      "version": "1.2.0",
+      "dependencies": []
+    },
+    {
+      "id": "kl.dk.fhir.term#1.0.0",
+      "name": "kl.dk.fhir.term",
+      "version": "1.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "kl.dk.fhir.term#1.1.0",
+      "name": "kl.dk.fhir.term",
+      "version": "1.1.0",
+      "dependencies": []
+    },
+    {
+      "id": "medcom.fhir.dk.core#dev",
+      "name": "medcom.fhir.dk.core",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "medcom.fhir.dk.messaging#dev",
+      "name": "medcom.fhir.dk.messaging",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "medcom.fhir.dk.metadata.core#dev",
+      "name": "medcom.fhir.dk.metadata.core",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "medcom.fhir.dk.xds.metadata#dev",
+      "name": "medcom.fhir.dk.xds.metadata",
+      "version": "dev",
+      "dependencies": []
+    },
+    {
+      "id": "nictiz.fhir.nl.stu3.zib2017#2.2.13",
+      "name": "nictiz.fhir.nl.stu3.zib2017",
+      "version": "2.2.13",
+      "dependencies": []
+    },
+    {
+      "id": "nictiz.fhir.nl.stu3.zib2017#2.2.14",
+      "name": "nictiz.fhir.nl.stu3.zib2017",
+      "version": "2.2.14",
+      "dependencies": []
+    },
+    {
+      "id": "simplifier.core.r4#4.0.1",
+      "name": "simplifier.core.r4",
+      "version": "4.0.1",
+      "dependencies": []
+    },
+    {
+      "id": "ufp.core#0.4.0",
+      "name": "ufp.core",
+      "version": "0.4.0",
+      "dependencies": []
+    },
+    {
+      "id": "us.cdc.phinvads#0.10.0",
+      "name": "us.cdc.phinvads",
+      "version": "0.10.0",
+      "dependencies": []
+    },
+    {
+      "id": "us.cdc.phinvads#0.7.0",
+      "name": "us.cdc.phinvads",
+      "version": "0.7.0",
+      "dependencies": []
+    },
+    {
+      "id": "us.nlm.vsac#0.4.0",
+      "name": "us.nlm.vsac",
+      "version": "0.4.0",
+      "dependencies": []
+    },
+    {
+      "id": "us.nlm.vsac#0.7.0",
+      "name": "us.nlm.vsac",
+      "version": "0.7.0",
+      "dependencies": []
+    },
+    {
+      "id": "us.nlm.vsac#0.9.0",
+      "name": "us.nlm.vsac",
+      "version": "0.9.0",
+      "dependencies": []
+    }
+  ]
+}

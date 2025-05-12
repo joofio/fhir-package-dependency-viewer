@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FHIR Package Graph</title>
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        #network {
+            width: 100%;
+            height: 800px;
+            border: 1px solid lightgray;
+        }
+
+        #controls {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="controls">
+
+        <label for="packageSelect">Package:</label>
+        <select id="packageSelect" style="width: 300px;"></select>
+
+        <label for="versionSelect">Version:</label>
+        <select id="versionSelect" style="width: 150px;"></select>
+
+
+
+        <label for="direction">Direction:</label>
+        <select id="direction">
+            <option value="both">Both</option>
+            <option value="has">Has Dependency</option>
+            <option value="is">Is Dependency</option>
+        </select>
+        <button onclick="render()">Render</button>
+    </div>
+    <div style="margin-top: 10px; font-size: 0.9em;">
+        <span style="color: blue;">⬅ has dependency</span> &nbsp;
+        <span style="color: green;">⬅ is dependency</span>
+    </div>
+    <div id="network"></div>
+    <div id="footer" style="margin-top: 20px; font-size: 0.9em; color: gray; text-align: center;"></div>
+
+    <script>
+        let rawData = {};
+        let nodes = [];
+        let edges = [];
+
+        let packageMap = {};  // e.g., { "hl7.fhir.us.core": [ "6.1.0", "5.0.1", ... ] }
+        let allPackageNames = [];
+
+
+        async function fetchData() {
+            const res = await fetch("slim_fhir_graph.json");
+            const data = await res.json();
+            rawData = data.packages;
+
+            // If using Option A structure:
+            const created = data.created || "unknown date";
+            rawData = data.packages;
+
+            // Show in footer
+            document.getElementById("footer").textContent = `📅 Data generated on: ${new Date(created).toLocaleString()}`;
+
+
+            // Build map of package name → versions
+            rawData.forEach(pkg => {
+                if (!packageMap[pkg.name]) {
+                    packageMap[pkg.name] = [];
+                    allPackageNames.push(pkg.name);
+                }
+                packageMap[pkg.name].push(pkg.version);
+            });
+
+            const select2Data = [{ id: '', text: '' }, ...allPackageNames.map(name => ({ id: name, text: name }))];
+
+            $('#packageSelect').select2({
+                data: select2Data,
+                placeholder: "Select a package",
+                allowClear: true
+            });
+
+
+            $('#versionSelect').select2({
+                placeholder: "Select version",
+                allowClear: true
+            });
+
+            // Update versions when a package is selected
+            $('#packageSelect').on('change', function () {
+                const selectedName = $(this).val();
+                updateVersionDropdown(selectedName);
+            });
+
+            // Optional: auto-render on version change
+            $('#versionSelect').on('change', function () {
+                const name = $('#packageSelect').val();
+                const version = $(this).val();
+                if (name && version);
+            });
+        }
+
+
+        function buildGraph(selectedId, direction) {
+            nodes = [];
+            edges = [];
+            const seen = new Set();
+
+            const rootPkg = rawData.find(pkg => pkg.id === selectedId);
+            if (!rootPkg) return;
+
+            // Add the root node with a distinct color
+            nodes.push({
+                id: rootPkg.id,
+                label: rootPkg.id,
+                color: {
+                    background: "orange",
+                    border: "black"
+                },
+                font: { color: "black", bold: true }
+            });
+            seen.add(rootPkg.id);
+
+
+            if (direction === "has" || direction === "both") {
+                for (const depId of rootPkg.dependencies) {
+                    // Add dependency node
+                    if (!seen.has(depId)) {
+                        nodes.push({ id: depId, label: depId });
+                        seen.add(depId);
+                    }
+
+                    // Edge: root → dependency
+                    edges.push({
+                        from: rootPkg.id,
+                        to: depId,
+                        color: "blue",
+                        arrows: "to"
+                    });
+                }
+            }
+
+            if (direction === "is" || direction === "both") {
+                // Scan all other packages to find those that depend on the root
+                for (const pkg of rawData) {
+                    if (pkg.dependencies.includes(rootPkg.id)) {
+                        // Add the package that depends on root
+                        if (!seen.has(pkg.id)) {
+                            nodes.push({ id: pkg.id, label: pkg.id });
+                            seen.add(pkg.id);
+                        }
+
+                        // Edge: dependent → root
+                        edges.push({
+                            from: pkg.id,
+                            to: rootPkg.id,
+                            color: "green",
+                            arrows: "to"
+                        });
+                    }
+                }
+            }
+        }
+
+        function render() {
+            const name = document.getElementById("packageSelect").value;
+            const version = document.getElementById("versionSelect").value;
+            const direction = document.getElementById("direction").value;
+
+            if (!name || !version) return;
+
+            const fullId = `${name}#${version}`;
+            buildGraph(fullId, direction);
+
+            const container = document.getElementById("network");
+            const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+            const options = {
+                nodes: { shape: "dot", size: 12 },
+                edges: { arrows: "to" },
+                physics: { stabilization: false }
+            };
+            new vis.Network(container, data, options);
+        }
+
+        fetchData();
+
+
+        function updateVersionDropdown(name) {
+            const versions = (packageMap[name] || []).sort().reverse();
+
+            const $versionSelect = $('#versionSelect');
+            $versionSelect.empty();
+            $versionSelect.append('<option></option>'); // placeholder
+
+            versions.forEach(ver => {
+                $versionSelect.append(new Option(ver, ver));
+            });
+
+            $versionSelect.trigger('change.select2');
+
+            if (versions.length === 1) {
+                $versionSelect.val(versions[0]).trigger('change');
+            }
+        }
+    </script>
+</body>
+
+</html>

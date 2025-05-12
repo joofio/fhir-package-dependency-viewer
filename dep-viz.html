@@ -118,48 +118,49 @@
             const rootPkg = rawData.find(pkg => pkg.id === selectedId);
             if (!rootPkg) return;
 
-            // Add the root node with a distinct color
+            // Add root node with highlight
             nodes.push({
                 id: rootPkg.id,
                 label: rootPkg.id,
-                color: {
-                    background: "orange",
-                    border: "black"
-                },
+                color: { background: "orange", border: "black" },
                 font: { color: "black", bold: true }
             });
             seen.add(rootPkg.id);
 
-
             if (direction === "has" || direction === "both") {
-                for (const depId of rootPkg.dependencies) {
-                    // Add dependency node
-                    if (!seen.has(depId)) {
-                        nodes.push({ id: depId, label: depId });
-                        seen.add(depId);
-                    }
+                const stack = [rootPkg];
 
-                    // Edge: root → dependency
-                    edges.push({
-                        from: rootPkg.id,
-                        to: depId,
-                        color: "blue",
-                        arrows: "to"
-                    });
+                while (stack.length > 0) {
+                    const current = stack.pop();
+
+                    for (const depId of current.dependencies) {
+                        // Avoid duplicates
+                        if (!seen.has(depId)) {
+                            nodes.push({ id: depId, label: depId });
+                            seen.add(depId);
+                            const depPkg = rawData.find(pkg => pkg.id === depId);
+                            if (depPkg) stack.push(depPkg); // Push for further traversal
+                        }
+
+                        // Add edge
+                        edges.push({
+                            from: current.id,
+                            to: depId,
+                            color: "blue",
+                            arrows: "to"
+                        });
+                    }
                 }
             }
 
             if (direction === "is" || direction === "both") {
-                // Scan all other packages to find those that depend on the root
                 for (const pkg of rawData) {
                     if (pkg.dependencies.includes(rootPkg.id)) {
-                        // Add the package that depends on root
                         if (!seen.has(pkg.id)) {
                             nodes.push({ id: pkg.id, label: pkg.id });
                             seen.add(pkg.id);
                         }
 
-                        // Edge: dependent → root
                         edges.push({
                             from: pkg.id,
                             to: rootPkg.id,

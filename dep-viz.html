@@ -39,15 +39,15 @@
         <label for="direction">Direction:</label>
         <select id="direction">
             <option value="both">Both</option>
-            <option value="has">Has Dependency</option>
-            <option value="is">Is Dependency</option>
+            <option value="has">Depends on</option>
+            <option value="is">Is a dependency of</option>
         </select>
         <button onclick="render()">Render</button>
     </div>
 
     <div style="margin-top: 10px; font-size: 0.9em;">
         <span style="color: blue;">Depends on</span> &nbsp;
-        <span style="color: green;">is a dependency of</span>
+        <span style="color: green;">Is a dependency of</span>
     </div>
 
     <div id="main-container" style="display: flex; flex: 1; overflow: hidden;">
@@ -181,7 +181,7 @@
     const container = document.getElementById("network");
     const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
     const options = {
-        nodes: { shape: "dot", size: 12 },
+        nodes: { shape: "dot", size: 15 },
         edges: { arrows: "to" },
         physics: {
             stabilization: false,

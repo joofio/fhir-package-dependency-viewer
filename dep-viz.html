@@ -24,7 +24,13 @@
 </head>
 
 <body>
-
+    <h1 style="text-align: center; margin-top: 20px;margin-bottom: 0px;">FHIR Package Dependency Graph</h1>
+    <p style="text-align: center; margin-bottom: 10px; font-size: 1em; color: gray;">
+        Explore transitive dependencies across FHIR packages. <br>
+        Data Retrieved from <a
+            href="https://fhir.org/guides/stats2/registry.json">https://fhir.org/guides/stats2/registry.json</a> every
+        day.
+    </p>
     <div id="controls">
 
         <label for="packageSelect">Package:</label>
@@ -187,8 +193,25 @@
             const options = {
                 nodes: { shape: "dot", size: 12 },
                 edges: { arrows: "to" },
-                physics: { stabilization: false }
+                physics: {
+                    stabilization: false, enabled: true,
+                    solver: "repulsion",
+                    repulsion: {
+                        nodeDistance: 100,  // ⬅️ Increase for more spacing
+                        centralGravity: 0.2,
+                        springLength: 150,
+                        springConstant: 0.02,
+                        damping: 0.09
+                    }
+                },
+                layout: {
+                    improvedLayout: true
+                }
             };
+
+
+
+
             new vis.Network(container, data, options);
         }
 

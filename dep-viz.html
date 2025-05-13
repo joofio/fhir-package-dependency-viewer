@@ -53,7 +53,40 @@
         <span style="color: blue;">has dependency</span> &nbsp;
         <span style="color: green;">is a dependency of</span>
     </div>
-    <div id="network"></div>
+    
+<div id="main-container" style="display: flex; width: 100%; height: 800px;">
+  <div id="graph-container" style="flex: 1; position: relative;">
+    <div id="network" style="width: 100%; height: 100%; border: 1px solid lightgray;"></div>
+
+    <!-- 🟦 Toggle button stays aligned on graph side -->
+    <button id="toggleSidebarBtn"
+      onclick="toggleSidebar()"
+        title="Show or hide the package list"
+
+      style="
+        position: absolute;
+        top: 20px;
+        right: 0;
+        transform: translateX(50%);
+        z-index: 999;
+        padding: 5px 10px;
+        border-radius: 0 4px 4px 0;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;">
+      ▶
+    </button>
+  </div>
+
+  <div id="sidebar" style="width: 300px; display: none; flex-direction: column; border-left: 1px solid #ccc;">
+    <div style="padding: 10px;">
+      <h3>Packages in Graph</h3>
+      <ul id="nodeNames" style="font-size: 0.9em;"></ul>
+    </div>
+  </div>
+</div>
+
     <div id="footer" style="margin-top: 20px; font-size: 0.9em; color: gray; text-align: center;"></div>
 
     <script>
@@ -188,6 +221,15 @@
             const fullId = `${name}#${version}`;
             buildGraph(fullId, direction);
 
+             // 👉 Populate the sidebar list
+  const ul = document.getElementById("nodeNames");
+  ul.innerHTML = "";
+
+  nodes.sort((a, b) => a.label.localeCompare(b.label)).forEach(node => {
+    const li = document.createElement("li");
+    li.textContent = node.label;
+    ul.appendChild(li);
+  });
             const container = document.getElementById("network");
             const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
             const options = {
@@ -216,6 +258,26 @@
         }
 
         fetchData();
+
+let sidebarVisible = false;
+
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const graphContainer = document.getElementById("graph-container");
+  const toggleBtn = document.getElementById("toggleSidebarBtn");
+
+  if (sidebarVisible) {
+    sidebar.style.display = "none";
+    graphContainer.style.flex = "1 1 100%";
+    toggleBtn.textContent = "▶"; // collapsed
+  } else {
+    sidebar.style.display = "flex";
+    graphContainer.style.flex = "1";
+    toggleBtn.textContent = "◀"; // expanded
+  }
+
+  sidebarVisible = !sidebarVisible;
+}
 
 
         function updateVersionDropdown(name) {

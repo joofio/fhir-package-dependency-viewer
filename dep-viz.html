@@ -44,8 +44,8 @@
         <button onclick="render()">Render</button>
     </div>
     <div style="margin-top: 10px; font-size: 0.9em;">
-        <span style="color: blue;">⬅ has dependency</span> &nbsp;
-        <span style="color: green;">⬅ is dependency</span>
+        <span style="color: blue;">has dependency</span> &nbsp;
+        <span style="color: green;">is a dependency of</span>
     </div>
     <div id="network"></div>
     <div id="footer" style="margin-top: 20px; font-size: 0.9em; color: gray; text-align: center;"></div>
@@ -69,7 +69,7 @@
             rawData = data.packages;
 
             // Show in footer
-            document.getElementById("footer").textContent = `📅 Data generated on: ${new Date(created).toLocaleString()}`;
+            document.getElementById("footer").textContent = `Data generated on: ${new Date(created).toLocaleString()}`;
 
 
             // Build map of package name → versions
@@ -165,7 +165,7 @@
                             from: pkg.id,
                             to: rootPkg.id,
                             color: "green",
-                            arrows: "to"
+                            arrows: "from"
                         });
                     }
                 }

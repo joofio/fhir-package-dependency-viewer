@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>FHIR Package Graph</title>
     <meta charset="UTF-8">
@@ -22,11 +23,14 @@
         }
     </style>
 </head>
+
 <body style="margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh;">
     <h1 style="text-align: center; margin-top: 20px;margin-bottom: 0px;">FHIR Package Dependency Graph</h1>
     <p style="text-align: center; margin-bottom: 10px; font-size: 1em; color: gray;">
         Explore transitive dependencies across FHIR packages. <br>
-        Data Retrieved from <a href="https://fhir.org/guides/stats2/registry.json">https://fhir.org/guides/stats2/registry.json</a> every day.
+        Data Retrieved from <a
+            href="https://fhir.org/guides/stats2/registry.json">https://fhir.org/guides/stats2/registry.json</a> every
+        day.
     </p>
 
     <div id="controls">
@@ -70,7 +74,8 @@
             </button>
         </div>
 
-        <div id="sidebar" style="width: 300px; display: none; flex-direction: column; border-left: 1px solid #ccc; height: 100vh;">
+        <div id="sidebar"
+            style="width: 300px; display: none; flex-direction: column; border-left: 1px solid #ccc; height: 100vh;">
             <div style="padding: 10px; flex-shrink: 0;">
                 <h3>Packages in Graph</h3>
             </div>
@@ -178,58 +183,81 @@
         }
 
         function renderGraph() {
-    const container = document.getElementById("network");
-    const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
-    const options = {
-        nodes: { shape: "dot", size: 15 },
-        edges: { arrows: "to" },
-        physics: {
-            stabilization: false,
-            enabled: true,
-            solver: "repulsion",
-            repulsion: {
-                nodeDistance: 100,
-                centralGravity: 0.2,
-                springLength: 150,
-                springConstant: 0.02,
-                damping: 0.09
-            }
-        },
-        layout: { improvedLayout: true }
-    };
+            const container = document.getElementById("network");
+            const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+            const options = {
+                nodes: { shape: "dot", size: 15 },
+                edges: { arrows: "to" },
+                physics: {
+                    stabilization: false,
+                    enabled: true,
+                    solver: "repulsion",
+                    repulsion: {
+                        nodeDistance: Math.min(200, 100 + nodes.length * 4),
 
-    const network = new vis.Network(container, data, options);
+                        centralGravity: 0.2,
+                        springLength: 150,
+                        springConstant: 0.02,
+                        damping: 0.09
+                    }
+                },
+                layout: { improvedLayout: true }
+            };
 
-    network.on("doubleClick", function (params) {
-        if (params.nodes.length === 1) {
-            const clickedNodeId = params.nodes[0]; // e.g., "hl7.fhir.us.core#6.1.0"
-            const direction = document.getElementById("direction").value;
+            networkInstance = new vis.Network(container, data, options);
+            const network = networkInstance;
 
-            // Extract package name and version
-            const [name, version] = clickedNodeId.split("#");
-            if (name && version) {
-                // Update selects
-                $('#packageSelect').val(name).trigger('change');
-                updateVersionDropdown(name);
-                setTimeout(() => {
-                    $('#versionSelect').val(version).trigger('change');
-                }, 0); // delay to ensure version dropdown is filled
-            }
+            // Zoom to fit, then zoom in based on number of nodes
+            network.fit({ animation: true });
 
-            buildGraph(clickedNodeId, direction);
-            renderGraph();
+            //const network = new vis.Network(container, data, options);
+            const zoomLevel = nodes.length <= 10 ? 1 :
+                nodes.length <= 30 ? 1.1 :
+                    0.3;
+
+            setTimeout(() => {
+                networkInstance.moveTo({
+                    scale: zoomLevel,
+                    animation: true
+                });
+            }, 300);
+network.on("doubleClick", function (params) {
+    if (params.nodes.length === 1) {
+        // 🟠 Double-click on a node → set as new root
+        const clickedNodeId = params.nodes[0];
+        const direction = document.getElementById("direction").value;
+
+        const [name, version] = clickedNodeId.split("#");
+        if (name && version) {
+            $('#packageSelect').val(name).trigger('change');
+            updateVersionDropdown(name);
+            setTimeout(() => {
+                $('#versionSelect').val(version).trigger('change');
+            }, 0);
         }
-    });
 
-    // Update sidebar list
-    const ul = document.getElementById("nodeNames");
-    ul.innerHTML = "";
-    nodes.sort((a, b) => a.label.localeCompare(b.label)).forEach(node => {
-        const li = document.createElement("li");
-        li.textContent = node.label;
-        ul.appendChild(li);
-    });
-}
+        buildGraph(clickedNodeId, direction);
+        renderGraph();
+    } else if (params.nodes.length === 0 && params.pointer && params.pointer.canvas) {
+        // 🟢 Double-click on empty space → zoom in on clicked position
+        const currentScale = network.getScale();
+        network.moveTo({
+            position: params.pointer.canvas,
+            scale: currentScale * 2, // zoom in a bit more
+            animation: true
+        });
+    }
+});
+
+            // Update sidebar list
+            const ul = document.getElementById("nodeNames");
+            ul.innerHTML = "";
+            nodes.sort((a, b) => a.label.localeCompare(b.label)).forEach(node => {
+                const li = document.createElement("li");
+                li.textContent = node.label;
+                ul.appendChild(li);
+            });
+        }
 
         function render() {
             const name = document.getElementById("packageSelect").value;
@@ -260,4 +288,5 @@
         fetchData();
     </script>
 </body>
+
 </html>

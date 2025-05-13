@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <title>FHIR Package Graph</title>
     <meta charset="UTF-8">
@@ -11,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Select2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <style>
         #network {
             width: 100%;
@@ -22,28 +20,21 @@
         #controls {
             margin-bottom: 10px;
         }
-
-
     </style>
 </head>
-
 <body style="margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh;">
-        <h1 style="text-align: center; margin-top: 20px;margin-bottom: 0px;">FHIR Package Dependency Graph</h1>
+    <h1 style="text-align: center; margin-top: 20px;margin-bottom: 0px;">FHIR Package Dependency Graph</h1>
     <p style="text-align: center; margin-bottom: 10px; font-size: 1em; color: gray;">
         Explore transitive dependencies across FHIR packages. <br>
-        Data Retrieved from <a
-            href="https://fhir.org/guides/stats2/registry.json">https://fhir.org/guides/stats2/registry.json</a> every
-        day.
+        Data Retrieved from <a href="https://fhir.org/guides/stats2/registry.json">https://fhir.org/guides/stats2/registry.json</a> every day.
     </p>
-    <div id="controls">
 
+    <div id="controls">
         <label for="packageSelect">Package:</label>
         <select id="packageSelect" style="width: 300px;"></select>
 
         <label for="versionSelect">Version:</label>
         <select id="versionSelect" style="width: 150px;"></select>
-
-
 
         <label for="direction">Direction:</label>
         <select id="direction">
@@ -53,72 +44,57 @@
         </select>
         <button onclick="render()">Render</button>
     </div>
+
     <div style="margin-top: 10px; font-size: 0.9em;">
         <span style="color: blue;">has dependency</span> &nbsp;
         <span style="color: green;">is a dependency of</span>
     </div>
-    
-<div id="main-container" style="display: flex; flex: 1; overflow: hidden;">
-      <div id="graph-container" style="flex: 1; position: relative;">
-<div id="network" style="width: 100%; height: 100%; border: 1px solid lightgray;"></div>
 
-    <!-- 🟦 Toggle button stays aligned on graph side -->
-    <button id="toggleSidebarBtn"
-      onclick="toggleSidebar()"
-        title="Show or hide the package list"
+    <div id="main-container" style="display: flex; flex: 1; overflow: hidden;">
+        <div id="graph-container" style="flex: 1; position: relative;">
+            <div id="network" style="width: 100%; height: 100%; border: 1px solid lightgray;"></div>
 
-      style="
-        position: absolute;
-        top: 20px;
-        right: 0;
-        transform: translateX(50%);
-        z-index: 999;
-        padding: 5px 10px;
-        border-radius: 0 4px 4px 0;
-        background: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;">
-      ▶
-    </button>
-  </div>
+            <button id="toggleSidebarBtn" onclick="toggleSidebar()" title="Show or hide the package list" style="
+                position: absolute;
+                top: 20px;
+                right: 0;
+                transform: translateX(50%);
+                z-index: 999;
+                padding: 5px 10px;
+                border-radius: 0 4px 4px 0;
+                background: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;">
+                ▶
+            </button>
+        </div>
 
-<div id="sidebar" style="width: 300px; display: none; flex-direction: column; border-left: 1px solid #ccc; height: 100vh;">
-  <div style="padding: 10px; flex-shrink: 0;">
-    <h3>Packages in Graph</h3>
-  </div>
-  <div style="flex: 1; overflow-y: auto; padding: 10px;">
-    <ul id="nodeNames" style="font-size: 0.9em; padding-left: 20px; margin: 0;"></ul>
-  </div>
-</div>
-  
-</div>
+        <div id="sidebar" style="width: 300px; display: none; flex-direction: column; border-left: 1px solid #ccc; height: 100vh;">
+            <div style="padding: 10px; flex-shrink: 0;">
+                <h3>Packages in Graph</h3>
+            </div>
+            <div style="flex: 1; overflow-y: auto; padding: 10px;">
+                <ul id="nodeNames" style="font-size: 0.9em; padding-left: 20px; margin: 0;"></ul>
+            </div>
+        </div>
+    </div>
 
-<div id="footer" style="margin-top: 20px; font-size: 0.9em; color: gray; text-align: center;"></div>
+    <div id="footer" style="margin-top: 20px; font-size: 0.9em; color: gray; text-align: center;"></div>
 
     <script>
         let rawData = {};
         let nodes = [];
         let edges = [];
-
-        let packageMap = {};  // e.g., { "hl7.fhir.us.core": [ "6.1.0", "5.0.1", ... ] }
+        let packageMap = {};
         let allPackageNames = [];
-
 
         async function fetchData() {
             const res = await fetch("slim_fhir_graph.json");
             const data = await res.json();
             rawData = data.packages;
+            document.getElementById("footer").textContent = `📅 Data generated on: ${new Date(data.created || "unknown").toLocaleString()}`;
 
-            // If using Option A structure:
-            const created = data.created || "unknown date";
-            rawData = data.packages;
-
-            // Show in footer
-            document.getElementById("footer").textContent = `📅 Data generated on: ${new Date(created).toLocaleString()}`;
-
-
-            // Build map of package name → versions
             rawData.forEach(pkg => {
                 if (!packageMap[pkg.name]) {
                     packageMap[pkg.name] = [];
@@ -135,36 +111,35 @@
                 allowClear: true
             });
 
-
             $('#versionSelect').select2({
                 placeholder: "Select version",
                 allowClear: true
             });
 
-            // Update versions when a package is selected
             $('#packageSelect').on('change', function () {
                 const selectedName = $(this).val();
                 updateVersionDropdown(selectedName);
             });
-
-            // Optional: auto-render on version change
-            $('#versionSelect').on('change', function () {
-                const name = $('#packageSelect').val();
-                const version = $(this).val();
-                if (name && version);
-            });
         }
 
+        function updateVersionDropdown(name) {
+            const versions = (packageMap[name] || []).sort().reverse();
+            const $versionSelect = $('#versionSelect');
+            $versionSelect.empty().append('<option></option>');
+            versions.forEach(ver => $versionSelect.append(new Option(ver, ver)));
+            $versionSelect.trigger('change.select2');
+            if (versions.length === 1) {
+                $versionSelect.val(versions[0]).trigger('change');
+            }
+        }
 
         function buildGraph(selectedId, direction) {
             nodes = [];
             edges = [];
             const seen = new Set();
-
             const rootPkg = rawData.find(pkg => pkg.id === selectedId);
             if (!rootPkg) return;
 
-            // Add root node with highlight
             nodes.push({
                 id: rootPkg.id,
                 label: rootPkg.id,
@@ -175,26 +150,16 @@
 
             if (direction === "has" || direction === "both") {
                 const stack = [rootPkg];
-
                 while (stack.length > 0) {
                     const current = stack.pop();
-
                     for (const depId of current.dependencies) {
-                        // Avoid duplicates
                         if (!seen.has(depId)) {
                             nodes.push({ id: depId, label: depId });
                             seen.add(depId);
                             const depPkg = rawData.find(pkg => pkg.id === depId);
-                            if (depPkg) stack.push(depPkg); // Push for further traversal
+                            if (depPkg) stack.push(depPkg);
                         }
-
-                        // Add edge
-                        edges.push({
-                            from: current.id,
-                            to: depId,
-                            color: "blue",
-                            arrows: "to"
-                        });
+                        edges.push({ from: current.id, to: depId, color: "blue", arrows: "to" });
                     }
                 }
             }
@@ -206,105 +171,93 @@
                             nodes.push({ id: pkg.id, label: pkg.id });
                             seen.add(pkg.id);
                         }
-
-                        edges.push({
-                            from: pkg.id,
-                            to: rootPkg.id,
-                            color: "green",
-                            arrows: "from"
-                        });
+                        edges.push({ from: pkg.id, to: rootPkg.id, color: "green", arrows: "from" });
                     }
                 }
             }
         }
+
+        function renderGraph() {
+    const container = document.getElementById("network");
+    const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+    const options = {
+        nodes: { shape: "dot", size: 12 },
+        edges: { arrows: "to" },
+        physics: {
+            stabilization: false,
+            enabled: true,
+            solver: "repulsion",
+            repulsion: {
+                nodeDistance: 100,
+                centralGravity: 0.2,
+                springLength: 150,
+                springConstant: 0.02,
+                damping: 0.09
+            }
+        },
+        layout: { improvedLayout: true }
+    };
+
+    const network = new vis.Network(container, data, options);
+
+    network.on("doubleClick", function (params) {
+        if (params.nodes.length === 1) {
+            const clickedNodeId = params.nodes[0]; // e.g., "hl7.fhir.us.core#6.1.0"
+            const direction = document.getElementById("direction").value;
+
+            // Extract package name and version
+            const [name, version] = clickedNodeId.split("#");
+            if (name && version) {
+                // Update selects
+                $('#packageSelect').val(name).trigger('change');
+                updateVersionDropdown(name);
+                setTimeout(() => {
+                    $('#versionSelect').val(version).trigger('change');
+                }, 0); // delay to ensure version dropdown is filled
+            }
+
+            buildGraph(clickedNodeId, direction);
+            renderGraph();
+        }
+    });
+
+    // Update sidebar list
+    const ul = document.getElementById("nodeNames");
+    ul.innerHTML = "";
+    nodes.sort((a, b) => a.label.localeCompare(b.label)).forEach(node => {
+        const li = document.createElement("li");
+        li.textContent = node.label;
+        ul.appendChild(li);
+    });
+}
 
         function render() {
             const name = document.getElementById("packageSelect").value;
             const version = document.getElementById("versionSelect").value;
             const direction = document.getElementById("direction").value;
-
             if (!name || !version) return;
-
             const fullId = `${name}#${version}`;
             buildGraph(fullId, direction);
+            renderGraph();
+        }
 
-             // 👉 Populate the sidebar list
-  const ul = document.getElementById("nodeNames");
-  ul.innerHTML = "";
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            const graphContainer = document.getElementById("graph-container");
+            const toggleBtn = document.getElementById("toggleSidebarBtn");
 
-  nodes.sort((a, b) => a.label.localeCompare(b.label)).forEach(node => {
-    const li = document.createElement("li");
-    li.textContent = node.label;
-    ul.appendChild(li);
-  });
-            const container = document.getElementById("network");
-            const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
-            const options = {
-                nodes: { shape: "dot", size: 12 },
-                edges: { arrows: "to" },
-                physics: {
-                    stabilization: false, enabled: true,
-                    solver: "repulsion",
-                    repulsion: {
-                        nodeDistance: 100,  // ⬅️ Increase for more spacing
-                        centralGravity: 0.2,
-                        springLength: 150,
-                        springConstant: 0.02,
-                        damping: 0.09
-                    }
-                },
-                layout: {
-                    improvedLayout: true
-                }
-            };
-
-
-
-
-            new vis.Network(container, data, options);
+            if (sidebar.style.display === "flex") {
+                sidebar.style.display = "none";
+                graphContainer.style.flex = "1 1 100%";
+                toggleBtn.textContent = "▶";
+            } else {
+                sidebar.style.display = "flex";
+                graphContainer.style.flex = "1";
+                toggleBtn.textContent = "◀";
+            }
         }
 
         fetchData();
-
-let sidebarVisible = false;
-
-function toggleSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  const graphContainer = document.getElementById("graph-container");
-  const toggleBtn = document.getElementById("toggleSidebarBtn");
-
-  if (sidebarVisible) {
-    sidebar.style.display = "none";
-    graphContainer.style.flex = "1 1 100%";
-    toggleBtn.textContent = "▶"; // collapsed
-  } else {
-    sidebar.style.display = "flex";
-    graphContainer.style.flex = "1";
-    toggleBtn.textContent = "◀"; // expanded
-  }
-
-  sidebarVisible = !sidebarVisible;
-}
-
-
-        function updateVersionDropdown(name) {
-            const versions = (packageMap[name] || []).sort().reverse();
-
-            const $versionSelect = $('#versionSelect');
-            $versionSelect.empty();
-            $versionSelect.append('<option></option>'); // placeholder
-
-            versions.forEach(ver => {
-                $versionSelect.append(new Option(ver, ver));
-            });
-
-            $versionSelect.trigger('change.select2');
-
-            if (versions.length === 1) {
-                $versionSelect.val(versions[0]).trigger('change');
-            }
-        }
     </script>
 </body>
-
 </html>
